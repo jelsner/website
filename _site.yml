@@ -1,0 +1,32 @@
+name: "James_Elsner"
+navbar:
+  title: "James B. Elsner"
+  left:
+    - text: "Publications"
+      icon: fa-book  fa-2x
+      href: publications.html
+    - text: "Vita"
+      icon: fa-file  fa-2x
+      href: cv.html
+    - text: "Presentations"
+      icon: fa-slideshare fa-2x
+      href: https://speakerdeck.com/jelsner
+    - text: "Videos"
+      icon: fa-video-camera fa-2x
+      menu:
+        - text: "Wistia"
+          icon: fa-wistia  fa-2x
+          href: https://james-elsner.wistia.com/projects
+  right: 
+    - icon: fa-github fa-2x
+      href: https://github.com/jelsner
+    - icon: fa-twitter fa-2x
+      href: https://twitter.com/JBElsner
+output:
+  html_document:
+    css: style.css
+    theme: yeti
+    highlight: textmate
+    include:
+        after_body: footer.html
+exclude: ["*.csv", "*.bib","*.sh","*.R"] 

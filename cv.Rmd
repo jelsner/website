@@ -1,0 +1,96 @@
+---
+title: "James B. Elsner"
+params:
+   address: Department of Geography, Florida State University
+   email: jelsner@fsu.edu
+---
+
+<!--html_preserve-->
+<style type="text/css">
+ul.CV {
+list-style-type: none;
+}
+</style>
+<!--/html_preserve-->
+
+```{r echo=FALSE,warning=FALSE,message=FALSE}
+library(RefManageR)
+```
+
+<ul class="CV">
+<li><i class="fa fa-home" aria-hidden="true"></i>  `r paste(" ", params$address)`</li>
+<li><i class="fa fa-envelope-o" aria-hidden="true"></i>  `r paste(" ", params$email)`</li>
+<li><i class="fa fa-clock-o" aria-hidden="true"></i> Last Updated: `r paste(" ", format(Sys.Date(), "%B %d, %Y"))`</li>
+</ul>
+
+*************
+
+# Education
+
+* 1988 - 90: PostDoc - University of Wisconsin-Milwaukee
+* 1984 - 88: PhD in Geosciences - University of Wisconsin-Milwaukee
+* 1981 - 84: MSc in Meteorology - University of Wisconsin-Milwaukee
+* 1977 - 81: BSc in Meteorology - University of Wisconsin-Milwaukee
+
+*************
+
+# Professional Experience
+* 2015 - present
+    + Chair, Department of Geography, Florida State University
+* 2008 - present
+    + Earl B. and Sophia H. Shaw Professor, Department of Geography, Florida State University
+* 2001 - 16
+    + President of *Climatek Inc.*
+* 2012 - 16
+    + Associate, Geophysical Fluid Dynamics Institute, Florida State University
+* 2001 - 08
+    + Professor, Department of Geography, Florida State University
+* 1998 - 01
+    + Associate Professor, Department of Geography, Florida State University
+* 1995 - 98
+    + Associate Professor, Department of Meteorology, Florida State University
+* 1990 - 95
+    + Assistant Professor, Department of Meteorology, Florida State University
+
+*************
+
+# Academic Books
+
+```{r echo=FALSE, results="asis",comment=FALSE}
+file_books <- ReadBib("books.bib")
+dates <- unlist(unique(file_books$year))[order(unlist(unique(file_books$year)),decreasing = TRUE)]
+#Prints recerences
+for (date in dates) {
+  print(file_books[list(year=date)],.opts = list(style="markdown",bib.style ="authoryear" ,max.names =10,dashed=FALSE))
+  cat("\n")
+}
+
+```
+
+# Refereed Academic Journals
+
+```{r echo=FALSE, results="asis",comment=FALSE}
+file_journals <- ReadBib("journals.bib")
+dates <- unlist(unique(file_journals$year))[order(unlist(unique(file_journals$year)), decreasing = TRUE)]
+
+#Prints references
+for (date in dates) {
+  cat(paste0("##",date),"\n")
+  print(file_journals[list(year=date)],.opts = list(style="markdown",bib.style ="authoryear", max.names = 10, dashed=FALSE))
+  cat("\n")
+}
+
+```
+
+# Grants Running Totals
+
+* Risk Prediction Initiative $355,475
+* National Science Foundation $1,306,348 
+* National Oceanic and Atmospheric Administration $96,000
+* Florida State University $122,500
+
+# Students Graduated
+
+* PhD: Matthew Carter (Meteorology), Brian Bossak (Meteorology), Jeff Dickey (Geography), Todd Albert (Geography), Emily Fogarty (Geography), Kelsey Scheitlin (Geography), Jill Trepanier (Geography), Robert Hodges (Geography), Nam-Young Kang (Geophysical Fluid Dynamics Institute),  Sarah Strazzo (Geography), Erik Fraza (Geography), Peter Wood (Geography), Holly Widen (Geography)
+
+* MS: Vincint Tino (Meteorology), Jason Hess (Meteorology), Todd Kimberlain (Meteorology), Matthew Carter (Meteorology), Kwan Kong (Meteorology), David Whitehead (Meteorology), Weitan Pan (Engineering), Bethany Kocher (Meteorology), Marc Cooper (Geography), Ethan Gibney (Geography), Emily Fogarty (Geography), Jill Malmstadt (Geography), Robert Hodges (Geography), Ona Strikas (Geography), Tyler Fricker (Geography)
