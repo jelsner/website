@@ -22,9 +22,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -100,6 +99,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -114,7 +116,6 @@ body {
   padding-top: 50px;
   margin-top: -50px;
 }
-
 .section h2 {
   padding-top: 50px;
   margin-top: -50px;
@@ -134,6 +135,43 @@ body {
 .section h6 {
   padding-top: 50px;
   margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -155,18 +193,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -260,6 +357,10 @@ $(document).ready(function () {
 <div id="journal-articles" class="section level1">
 <h1>Journal Articles</h1>
 <div id="section" class="section level2">
+<h2>2019</h2>
+<p>Elsner, J. B, T. Fricker and Z. Schroder (2019). “Increasingly powerful tornadoes in the United States”. In: <em>Geophysical Research Letters</em> 46, pp. 392-398. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerFrickerSchroder2019.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerFrickerSchroder2019.pdf</a>.</p>
+</div>
+<div id="section-1" class="section level2">
 <h2>2018</h2>
 <p>Ellis, K, L. R. Mason, K. N. Gassert, J. B. Elsner and T. Fricker (2018). “Public perception of tornado risk in Tennessee, USA”. In: <em>International Journal of Biometeorology</em> 62, pp. 1557-1566. DOI: <a href="https://doi.org/10.1007/s00484-018-1547-x">10.1007/s00484-018-1547-x</a>. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/EllisEtAl2018.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/EllisEtAl2018.pdf</a>.</p>
 <p>Elsner, J. B, T. Fricker and W. D. Berry (2018). “A model for U.S. tornado casualties involving interaction between damage path estimates of population density and energy dissipation”. In: <em>Journal of Applied Meteorology and Climatology</em> 57, pp. 2035-2046. DOI: <a href="https://doi.org/10.1175/JAMC-D-18-0106.1">10.1175/JAMC-D-18-0106.1</a>. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerFrickerBerry2018.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerFrickerBerry2018.pdf</a>.</p>
@@ -267,14 +368,14 @@ $(document).ready(function () {
 <p>Kang, N. and J. B. Elsner (2018). “The changing validity of tropical cyclone warnings under global warming”. In: <em>npj Climate and Atmospheric Science</em> 36, pp. 1-4. DOI: <a href="https://doi.org/0.1038/s41612-018-0047-3">0.1038/s41612-018-0047-3</a>. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/KangElsner2018.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/KangElsner2018.pdf</a>.</p>
 <p>Yang, S, N. Kang, J. B. Elsner and Y. Chun (2018). “Influence of global warming on western North Pacific tropical cyclone intensities during 2015”. In: <em>Journal of Climate</em> 31, pp. 919-925. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/YangEtAl2018.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/YangEtAl2018.pdf</a>.</p>
 </div>
-<div id="section-1" class="section level2">
+<div id="section-2" class="section level2">
 <h2>2017</h2>
 <p>Fricker, T, J. B. Elsner and T. H. Jagger (2017). “Population and energy elasticity of tornado casualties”. In: <em>Geophysical Research Letters</em> 44, pp. 3941-3949. DOI: <a href="https://doi.org/10.1002/2017GL073093">10.1002/2017GL073093</a>. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/FrickerElsnerJagger2017.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/FrickerElsnerJagger2017.pdf</a>.</p>
 <p>Fricker, T, J. B. Elsner, V. Mesev and T. H. Jagger (2017). “A dasymetric method to spatially apportion tornado casualty counts”. In: <em>Geomatics, Natural Hazards and Risk</em> 8, pp. 1768-1782. DOI: <a href="https://doi.org/10.1080/19475705.2017.1386724">10.1080/19475705.2017.1386724</a>. eprint: <a href="http://dx.doi.org/10.1080/19475705.2017.1386724" class="uri">http://dx.doi.org/10.1080/19475705.2017.1386724</a>. URL: <a href="http://dx.doi.org/10.1080/19475705.2017.1386724" class="uri">http://dx.doi.org/10.1080/19475705.2017.1386724</a>.</p>
 <p>Humphreys, J, J. B. Elsner, T. H. Jagger and A. Mahjoor (2017). “Disaggregating the patchwork: Probabilistic models as tools to predict wetland presence as a continuous gradient”. In: <em>Wetlands</em> 37, pp. 205-219. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/HumphreysElsnerJaggerMahjoor2017.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/HumphreysElsnerJaggerMahjoor2017.pdf</a>.</p>
 <p>Humphreys, J, J. B. Elsner, T. H. Jagger and S. Pau (2017). “A Bayesian geostatistical approach to modeling global distributions of <em>Lygodium microphyllum</em> under projected climate warming”. In: <em>Ecological Modelling</em> 363, pp. 192-206. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/HumphreysEtAl2017.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/HumphreysEtAl2017.pdf</a>.</p>
 </div>
-<div id="section-2" class="section level2">
+<div id="section-3" class="section level2">
 <h2>2016</h2>
 <p>Elsner, J. B, T. Fricker, T. H. Jagger and V. Mesev (2016). “Statistical models for predicting tornado rates: Case studies from Oklahoma and the Mid South USA”. In: <em>International Journal of Safety and Security Engineering</em> 6, pp. 1-9. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerFrickerJaggerMesev2016.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerFrickerJaggerMesev2016.pdf</a>.</p>
 <p>Elsner, J. B, T. Fricker, H. M. Widen, C. M. Castillo, J. Humphreys, J. Jung, S. Rahman, A. Richard, T. H. Jagger, T. Bhatrasataponkul, et al. (2016). “The relationship between elevation roughness and tornado activity: A spatial statistical model fit to data from the central Great Plains”. In: <em>Journal of Applied Meteorology and Climatology</em> 55, pp. 849-859. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerEtAl2016.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerEtAl2016.pdf</a>.</p>
@@ -285,7 +386,7 @@ $(document).ready(function () {
 <p>Strazzo, S. E, J. B. Elsner, T. E. LaRow, H. Murakami, M. Wehner and M. Zhao (2016). “The influence of model resolution on the simulated sensitivity of North Atlantic tropical cyclone maximum intensity to sea surface temperature”. In: <em>Journal of Advances in Modeling Earth Systems</em> 8, pp. 1037-1054. DOI: <a href="https://doi.org/10.1002/2016MS000635">10.1002/2016MS000635</a>.</p>
 <p>Widen, H. M, J. B. Elsner, S. Pau and C. K. Uejio (2016). “Graphical inference in geographical research”. In: <em>Geographical Analysis</em> 48, pp. 115-131. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/WidenElsnerPauUejio2016.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/WidenElsnerPauUejio2016.pdf</a>.</p>
 </div>
-<div id="section-3" class="section level2">
+<div id="section-4" class="section level2">
 <h2>2015</h2>
 <p>Elsner, J. B, S. C. Elsner and T. H. Jagger (2015). “The increasing efficiency of tornado days in the United States”. In: <em>Climate Dynamics</em> 45.3-4, pp. 651-659. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerElsnerJagger2015.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerElsnerJagger2015.pdf</a>.</p>
 <p>Fraza, E. and J. B. Elsner (2015). “A climatological study of the effect of sea-surface temperature on North Atlantic hurricane intensification”. In: <em>Physical Geography</em> 36.5, pp. 395-407. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/FrazaElsner2015.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/FrazaElsner2015.pdf</a>.</p>
@@ -297,7 +398,7 @@ $(document).ready(function () {
 <p>Walsh, K. J, S. J. Camargo, G. A. Vecchi, A. S. Daloz, J. B. Elsner, K. Emanuel, M. Horn, Y. Lim, M. Roberts, C. Patricola, et al. (2015). “Hurricanes and climate: the US CLIVAR working group on hurricanes”. In: <em>Bulletin of the American Meteorological Society</em> 96.6, pp. 997-1017.</p>
 <p>Widen, H. M, T. Fricker and J. B. Elsner (2015). “New methods in tornado climatology”. In: <em>Geography Compass</em> 9.4, pp. 157-168. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/WidenFrickerElsner2015.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/WidenFrickerElsner2015.pdf</a>.</p>
 </div>
-<div id="section-4" class="section level2">
+<div id="section-5" class="section level2">
 <h2>2014</h2>
 <p>Elsner, J. B, T. H. Jagger and I. J. Elsner (2014). “Tornado intensity estimated from damage path dimensions”. In: <em>PLoS ONE</em> 9.9, p. e107571. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJaggerElsner2014.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJaggerElsner2014.pdf</a>.</p>
 <p>Elsner, J. B, T. H. Jagger, H. M. Widen and D. R. Chavas (2014). “Daily tornado frequency distributions in the United~States”. In: <em>Environmental Research Letters</em> 9.2, p. 024018. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJaggerWidenChavas2014.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJaggerWidenChavas2014.pdf</a>.</p>
@@ -306,7 +407,7 @@ $(document).ready(function () {
 <p>Fricker, T, J. B. Elsner, P. Camp and T. H. Jagger (2014). “Empirical estimates of kinetic energy from some recent U.S. tornadoes”. In: <em>Geophysical Research Letters</em> 41, pp. 4340-4346. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/FrickerElsnerCampJagger2014.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/FrickerElsnerCampJagger2014.pdf</a>.</p>
 <p>Hodges, R. E, T. H. Jagger and J. B. Elsner (2014). “The sun-hurricane connection: Diagnosing the solar impacts on hurricane frequency over the North Atlantic basin using a space-time model”. In: <em>Natural Hazards</em> 73.2, pp. 1063-1084. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/HodgesJaggerElsner2014.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/HodgesJaggerElsner2014.pdf</a>.</p>
 </div>
-<div id="section-5" class="section level2">
+<div id="section-6" class="section level2">
 <h2>2013</h2>
 <p>Das, O, Y. Wang, J. Donoghue, X. Xu, J. Coor, J. Elsner and Y. Xu (2013). “Reconstruction of paleostorms and paleoenvironment using geochemical proxies archived in the sediments of two coastal lakes in northwest Florida”. In: <em>Quaternary Science Reviews</em> 68, pp. 142-153.</p>
 <p>Elsner, J. B, L. E. Michaels, K. N. Scheitlin and I. J. Elsner (2013). “The decreasing population bias in tornado reports”. In: <em>Weather, Climate, and Society</em> 5, pp. 221-232. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerMichaelsScheitlinElsner2013.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerMichaelsScheitlinElsner2013.pdf</a>.</p>
@@ -319,7 +420,7 @@ $(document).ready(function () {
 <p>Strikas, O. M. and J. B. Elsner (2013). “Enhanced cloud-to-ground lightning frequency in the vicinity of coal plants and highways in Northern Georgia, USA”. In: <em>Atmospheric Science Letters</em> 14.4, pp. 243-248.</p>
 <p>Widen, H. M, J. B. Elsner, R. B. Cruz, G. Xing, E. Fraza, L. Migliorelli, S. Strazzo, C. Amrine, B. Mulholland, M. Patterson, et al. (2013). “Adjusted tornado probabilities”. In: <em>Electronic Journal of Severe Storms Meteorology</em> 8, pp. 1-12. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/WidenEtAl2013.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/WidenEtAl2013.pdf</a>.</p>
 </div>
-<div id="section-6" class="section level2">
+<div id="section-7" class="section level2">
 <h2>2012</h2>
 <p>Elsner, J. B, R. E. Hodges and T. H. Jagger (2012a). “Spatial grids for hurricane climate research”. In: <em>Climate Dynamics</em> 39.1, pp. 21-36. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerHodgesJagger2012.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerHodgesJagger2012.pdf</a>.</p>
 <p>Elsner, J. B, R. E. Hodges and T. H. Jagger (2012b). “Spatial grids for hurricane climate research”. In: <em>Climate dynamics</em> 39.1-2, pp. 21-36. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerHodgesJagger2012.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerHodgesJagger2012.pdf</a>.</p>
@@ -331,14 +432,14 @@ $(document).ready(function () {
 <p>Kang, N. and J. B. Elsner (2012b). “Consensus on climate trends in western North Pacific tropical cyclones”. In: <em>Journal of Climate</em> 25.21, pp. 7564-7573. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/KangElsner2012b.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/KangElsner2012b.pdf</a>.</p>
 <p>Murnane, R. J. and J. B. Elsner (2012). “Maximum wind speeds and US hurricane losses”. In: <em>Geophysical Research Letters</em> 39.16. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/MurnaneElsner2012.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/MurnaneElsner2012.pdf</a>.</p>
 </div>
-<div id="section-7" class="section level2">
+<div id="section-8" class="section level2">
 <h2>2011</h2>
 <p>Convertino, M, J. B. Elsner, R. Muñoz-Carpena, G. A. Kiker, C. J. Martinez, R. A. Fischer and I. Linkov (2011). “Do tropical cyclones shape shorebird habitat patterns? Biogeoclimatology of snowy plovers in Florida”. In: <em>PloS ONE</em> 6.1, p. e15683. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ConvertinoEtAl2011.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ConvertinoEtAl2011.pdf</a>.</p>
 <p>Elsner, J. B, S. W. Lewers, J. C. Malmstadt and T. H. Jagger (2011). “Estimating contemporary and future wind-damage losses from hurricanes affecting Eglin air force base, Florida”. In: <em>Journal of Applied Meteorology and Climatology</em> 50.7, pp. 1514-1526. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerLewersMalmstadtJagger2011.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerLewersMalmstadtJagger2011.pdf</a>.</p>
 <p>Jagger, T. H, J. B. Elsner and R. K. Burch (2011). “Climate and solar signals in property damage losses from hurricanes affecting the United States”. In: <em>Natural Hazards</em> 58.1, pp. 541-557. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/JaggerElsnerBurch2011.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/JaggerElsnerBurch2011.pdf</a>.</p>
 <p>Scheitlin, K. N, J. B. Elsner, S. W. Lewers, J. C. Malmstadt and T. H. Jagger (2011). “Risk assessment of hurricane winds for Eglin air force base in northwestern Florida, USA”. In: <em>Theoretical and applied climatology</em> 105.3-4, pp. 287-296. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ScheitlinElsnerLewersMalmstadtJagger2011.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ScheitlinElsnerLewersMalmstadtJagger2011.pdf</a>.</p>
 </div>
-<div id="section-8" class="section level2">
+<div id="section-9" class="section level2">
 <h2>2010</h2>
 <p>Elsner, J. B, T. Jagger and R. Hodges (2010). “Daily tropical cyclone intensity response to solar ultraviolet radiation”. In: <em>Geophysical Research Letters</em> 37.9. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJaggerHodges2010.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJaggerHodges2010.pdf</a>.</p>
 <p>Hodges, R. E. and J. B. Elsner (2010). “Evidence linking solar variability with US hurricanes”. In: <em>International Journal of Climatology</em> 31.13, pp. 1897-1907. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/HodgesElsner2010.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/HodgesElsner2010.pdf</a>.</p>
@@ -346,7 +447,7 @@ $(document).ready(function () {
 <p>Malmstadt, J. C, J. B. Elsner and T. H. Jagger (2010). “Risk of strong hurricane winds to Florida cities”. In: <em>Journal of Applied Meteorology and Climatology</em> 49.10, pp. 2121-2132. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/MalmstadtElsnerJagger2010.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/MalmstadtElsnerJagger2010.pdf</a>.</p>
 <p>Scheitlin, K. N, J. B. Elsner, J. Malmstadt, R. Hodges and T. Jagger (2010). “Toward increased utilization of historical hurricane chronologies”. In: <em>Journal of Geophysical Research: Atmospheres</em> 115.D3, p. D3108. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ScheitlinElsnerMalmstadtHodgesJagger2010.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ScheitlinElsnerMalmstadtHodgesJagger2010.pdf</a>.</p>
 </div>
-<div id="section-9" class="section level2">
+<div id="section-10" class="section level2">
 <h2>2009</h2>
 <p>Elsner, J. B, R. K. Burch and T. H. Jagger (2009). “Catastrophe finance: An emerging discipline”. In: <em>Eos, Transactions American Geophysical Union</em> 90.33, pp. 281-282. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerBurchJagger2009.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerBurchJagger2009.pdf</a>.</p>
 <p>Elsner, J. B, T. Jagger and E. Fogarty (2009). “Visibility network of United States hurricanes”. In: <em>Geophysical Research Letters</em> 36.16. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJaggerFogarty2009.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJaggerFogarty2009.pdf</a>.</p>
@@ -355,7 +456,7 @@ $(document).ready(function () {
 <p>Kara, A. B, R. W. Helber, T. P. Boyer and J. B. Elsner (2009). “Mixed layer depth in the Aegean, Marmara, Black and Azov Seas: Part I: general features”. In: <em>Journal of Marine Systems</em> 78, pp. S169-S180.</p>
 <p>Malmstadt, J, K. Scheitlin and J. B. Elsner (2009). “Florida hurricanes and damage costs”. In: <em>Southeastern Geographer</em> 49.2, pp. 108-131. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/MalmstadtScheitlinElsner2009.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/MalmstadtScheitlinElsner2009.pdf</a>.</p>
 </div>
-<div id="section-10" class="section level2">
+<div id="section-11" class="section level2">
 <h2>2008</h2>
 <p>Elsner, J. B. and T. Jagger (2008a). “United States and Caribbean tropical cyclone activity related to the solar cycle”. In: <em>Geophysical Research Letters</em> 35.18. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJagger2008.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJagger2008.pdf</a>.</p>
 <p>Elsner, J. B. and T. H. Jagger (2008b). “Hurricanes and climate change”. In: <em>Bulletin of the American Meteorological Society</em> 89.5, pp. 677-680.</p>
@@ -363,12 +464,12 @@ $(document).ready(function () {
 <p>Elsner, J. B, T. H. Jagger and K. Liu (2008). “Comparison of hurricane return levels using historical and geological records”. In: <em>Journal of Applied Meteorology and Climatology</em> 47.2, pp. 368-374. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJaggerLiu2008.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJaggerLiu2008.pdf</a>.</p>
 <p>Elsner, J. B, J. P. Kossin and T. H. Jagger (2008). “The increasing intensity of the strongest tropical cyclones”. In: <em>Nature</em> 455.7209, pp. 92-95. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerKossinJagger2008.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerKossinJagger2008.pdf</a>.</p>
 </div>
-<div id="section-11" class="section level2">
+<div id="section-12" class="section level2">
 <h2>2007</h2>
 <p>Elsner, J. B. (2007a). “Climatology: Tempests in time”. In: <em>Nature</em> 447.7145, pp. 647-649. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/Elsner2007.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/Elsner2007.pdf</a>.</p>
 <p>Elsner, J. B. (2007b). “Granger causality and Atlantic hurricanes”. In: <em>Tellus A</em> 59.4, pp. 476-485. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/Elsner2007.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/Elsner2007.pdf</a>.</p>
 </div>
-<div id="section-12" class="section level2">
+<div id="section-13" class="section level2">
 <h2>2006</h2>
 <p>Elsner, J. B. (2006). “Evidence in support of the climate change-Atlantic hurricane hypothesis”. In: <em>Geophysical Research Letters</em> 33.16. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/Elsner2006.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/Elsner2006.pdf</a>.</p>
 <p>Elsner, J. B. and T. H. Jagger (2006a). “Comparison of hindcasts anticipating the 2004 Florida hurricane season”. In: <em>Weather and Forecasting</em> 21.2, pp. 182-192. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJagger2006.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJagger2006.pdf</a>.</p>
@@ -379,28 +480,28 @@ $(document).ready(function () {
 <p>Fogarty, E. A, J. B. Elsner, T. H. Jagger, K. Liu and K. Louie (2006). “Variations in typhoon landfalls over China”. In: <em>Advances in Atmospheric Sciences</em> 23.5, pp. 665-677. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/FogartyElsnerJaggerLiuLouie2006.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/FogartyElsnerJaggerLiuLouie2006.pdf</a>.</p>
 <p>Jagger, T. H. and J. B. Elsner (2006). “Climatology models for extreme hurricane winds near the United States”. In: <em>Journal of Climate</em> 19.13, pp. 3220-3236. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/JaggerElsner2006.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/JaggerElsner2006.pdf</a>.</p>
 </div>
-<div id="section-13" class="section level2">
+<div id="section-14" class="section level2">
 <h2>2005</h2>
 <p>Tsonis, A, J. B. Elsner, A. Hunt and T. Jagger (2005). “Unfolding the relation between global temperature and ENSO”. In: <em>Geophysical Research Letters</em> 32.9.</p>
 </div>
-<div id="section-14" class="section level2">
+<div id="section-15" class="section level2">
 <h2>2004</h2>
 <p>Bossak, B. H. and J. B. Elsner (2004). “Plotting early nineteenth century hurricane information”. In: <em>Eos, Trans. Amer. Geophys. Union</em> 85, pp. 1-5. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/BossakElsner2004.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/BossakElsner2004.pdf</a>.</p>
 <p>Elsner, J. B. and T. H. Jagger (2004). “A hierarchical Bayesian approach to seasonal hurricane modeling”. In: <em>Journal of Climate</em> 17.14, pp. 2813-2827. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJagger2004.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJagger2004.pdf</a>.</p>
 <p>Elsner, J. B, X. Niu and T. H. Jagger (2004). “Detecting shifts in hurricane rates using a Markov chain Monte Carlo approach”. In: <em>Journal of Climate</em> 17.13, pp. 2652-2666. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerNiuJagger2004.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerNiuJagger2004.pdf</a>.</p>
 </div>
-<div id="section-15" class="section level2">
+<div id="section-16" class="section level2">
 <h2>2003</h2>
 <p>Elsner, J. B. (2003). “Tracking hurricanes”. In: <em>Bulletin of the American Meteorological Society</em> 84.3, p. 353. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/Elsner2003.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/Elsner2003.pdf</a>.</p>
 <p>Elsner, J. B. and K. Liu (2003). “Examining the ENSO-typhoon hypothesis”. In: <em>Climate Research</em> 25.1, pp. 43-54. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerLiu2003.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerLiu2003.pdf</a>.</p>
 <p>Niu, X, I. W. McKeague and J. B. Elsner (2003). “Seasonal space-time models for climate systems”. In: <em>Statistical Inference for Stochastic Processes</em> 6.2, pp. 111-133. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/NiuMcKeagueElsner2003.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/NiuMcKeagueElsner2003.pdf</a>.</p>
 <p>Tsonis, A, A. Hunt and J. B. Elsner (2003). “On the relation between ENSO and global climate change”. In: <em>Meteorology and Atmospheric Physics</em> 84.3-4, pp. 229-242. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/TsonisHuntElsner2003.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/TsonisHuntElsner2003.pdf</a>.</p>
 </div>
-<div id="section-16" class="section level2">
+<div id="section-17" class="section level2">
 <h2>2002</h2>
 <p>Jagger, T. H, X. Niu and J. B. Elsner (2002). “A space-time model for seasonal hurricane prediction”. In: <em>International Journal of Climatology</em> 22.4, pp. 451-465. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/JaggerNiuElsner2002.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/JaggerNiuElsner2002.pdf</a>.</p>
 </div>
-<div id="section-17" class="section level2">
+<div id="section-18" class="section level2">
 <h2>2001</h2>
 <p>Arguez, A. and J. B. Elsner (2001). “Trends in US tropical cyclone mortality during the past century”. In: <em>Florida Geographer</em> 32, pp. 28-37.</p>
 <p>Elsner, J. B. and B. H. Bossak (2001a). “Bayesian analysis of US hurricane climate”. In: <em>Journal of Climate</em> 14.23, pp. 4341-4350. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerBossak2001.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerBossak2001.pdf</a>.</p>
@@ -409,7 +510,7 @@ $(document).ready(function () {
 <p>Elsner, J. B. and S. Kavlakov (2001). “Hurricane intensity changes associated with geomagnetic variation”. In: <em>Atmospheric Science Letters</em> 2.1-4, pp. 86-93. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerKavlakov2001.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerKavlakov2001.pdf</a>.</p>
 <p>Jagger, T, J. B. Elsner and X. Niu (2001). “A dynamic probability model of hurricane winds in coastal counties of the United States”. In: <em>Journal of Applied Meteorology</em> 40.5, pp. 853-863. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/JaggerElsnerNiu2001.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/JaggerElsnerNiu2001.pdf</a>.</p>
 </div>
-<div id="section-18" class="section level2">
+<div id="section-19" class="section level2">
 <h2>2000</h2>
 <p>Carter, M. M, J. B. Elsner and S. Bennett (2000). “A quantitative precipitation forecast experiment for Puerto Rico”. In: <em>Journal of Hydrology</em> 239.1, pp. 162-178. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/CarterElsnerBennett2000.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/CarterElsnerBennett2000.pdf</a>.</p>
 <p>Elsner, J. B, T. Jagger and X. Niu (2000). “Changes in the rates of North Atlantic major hurricane activity during the 20 th century”. In: <em>Geophysical Research Letters</em> 27.12, pp. 1743-1746. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJaggerNiu2000.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerJaggerNiu2000.pdf</a>.</p>
@@ -417,13 +518,13 @@ $(document).ready(function () {
 <p>Elsner, J. B, K. Liu and B. Kocher (2000). “Spatial variations in major US hurricane activity: Statistics and a physical mechanism”. In: <em>Journal of Climate</em> 13.13, pp. 2293-2305. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerLiuKocher2000.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerLiuKocher2000.pdf</a>.</p>
 <p>Mumane, R. J, C. Barton, E. Collins, J. Donnelly, J. B. Elsner, K. Emanuel, I. Ginis, S. Howard, C. Landsea, K. Liu, et al. (2000). “Model estimates hurricane wind speed probabilities”. In: <em>Eos, Transactions American Geophysical Union</em> 81.38, pp. 433-438.</p>
 </div>
-<div id="section-19" class="section level2">
+<div id="section-20" class="section level2">
 <h2>1999</h2>
 <p>Elsner, J. B, A. Kara and M. Owens (1999). “Fluctuations in North Atlantic hurricane frequency”. In: <em>Journal of Climate</em> 12.2, pp. 427-437. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerKaraOwens1999.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerKaraOwens1999.pdf</a>.</p>
 <p>Tsonis, A. and J. B. Elsner (1999). “The autocorrelation function and human influences on climate”. In: <em>science</em> 285.5427, pp. 495-495.</p>
 <p>Tsonis, A, P. Roebber and J. B. Elsner (1999). “Long-range correlations in the extratropical atmospheric circulation: origins and implications”. In: <em>Journal of Climate</em> 12.5, pp. 1534-1541.</p>
 </div>
-<div id="section-20" class="section level2">
+<div id="section-21" class="section level2">
 <h2>1998</h2>
 <p>Bove, M. C, J. J. O’Brien, J. B. Elsner, C. W. Landsea and X. Niu (1998). “Effect of El Niño on US landfalling hurricanes, revisited”. In: <em>Bulletin of the American Meteorological Society</em> 79.11, pp. 2477-2482.</p>
 <p>Elsner, J. B, X. Niu and A. Tsonis (1998). “Multi-year prediction model of North Atlantic hurricane activity”. In: <em>Meteorology and Atmospheric Physics</em> 68.1-2, pp. 43-51.</p>
@@ -433,7 +534,7 @@ $(document).ready(function () {
 <p>Tsonis, A. and J. B. Elsner (1998). “Comments on “The Southern Oscillation as an Example of a Simple, Ordered Subsystem of a Complex Chaotic System””. In: <em>Journal of Climate</em> 11.9, pp. 2453-2454.</p>
 <p>Tsonis, A, P. Roebber and J. B. Elsner (1998). “A characteristic time scale in the global temperature record”. In: <em>Geophysical Research Letters</em> 25.15, pp. 2821-2823.</p>
 </div>
-<div id="section-21" class="section level2">
+<div id="section-22" class="section level2">
 <h2>1997</h2>
 <p>Carter, M. and J. B. Elsner (1997). “A statistical method for forecasting rainfall over Puerto Rico”. In: <em>Weather and Forecasting</em> 12.3, pp. 515-525. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/CarterElsner1997.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/CarterElsner1997.pdf</a>.</p>
 <p>Lehmiller, G, T. Kimberlain and J. B. Elsner (1997). “Seasonal prediction models for North Atlantic basin hurricane location”. In: <em>Monthly Weather Review</em> 125.8, pp. 1780-1791. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/LehmillerKimberlainElsner1997.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/LehmillerKimberlainElsner1997.pdf</a>.</p>
@@ -441,7 +542,7 @@ $(document).ready(function () {
 <p>Tsonis, A. A, J. B. Elsner and P. A. Tsonis (1997). “Is DNA a language?” In: <em>Journal of Theoretical Biology</em> 184.1, pp. 25-29.</p>
 <p>Tsonis, A. and J. B. Elsner (1997). “Global temperature as a regulator of climate predictability”. In: <em>Physica D: Nonlinear Phenomena</em> 108.1, pp. 191-196. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/TsonisElsner1997.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/TsonisElsner1997.pdf</a>.</p>
 </div>
-<div id="section-22" class="section level2">
+<div id="section-23" class="section level2">
 <h2>1996</h2>
 <p>Carter, M. M. and J. B. Elsner (1996). “Convective rainfall regions of Puerto Rico”. In: <em>International Journal of Climatology</em> 16.9, pp. 1033-1043.</p>
 <p>Elsner, J. B, H. Fuelberg, R. Deal III, J. Orrock, G. Lehmiller and P. Ruscher (1996). “Tallahassee, Florida, minimum temperature anomaly: Description and speculations”. In: <em>Bulletin of the American Meteorological Society</em> 77.4, pp. 721-728. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerFuelbergDealOrrockLehmillerRuscher1996.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerFuelbergDealOrrockLehmillerRuscher1996.pdf</a>.</p>
@@ -449,13 +550,13 @@ $(document).ready(function () {
 <p>Tsonis, A. and J. B. Elsner (1996). “Mapping the channels of communication between the tropics and higher latitudes in the atmosphere”. In: <em>Physica D: Nonlinear Phenomena</em> 92.3, pp. 237-244.</p>
 <p>Tsonis, A, P. Kumar, J. B. Elsner and P. Tsonis (1996). “Wavelet analysis of DNA sequences”. In: <em>Physical Review E</em> 53.2, p. 1828. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/TsonisKumarElsnerTsonis1996.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/TsonisKumarElsnerTsonis1996.pdf</a>.</p>
 </div>
-<div id="section-23" class="section level2">
+<div id="section-24" class="section level2">
 <h2>1995</h2>
 <p>Hess, J, J. B. Elsner and N. LaSeur (1995). “Improving seasonal hurricane predictions for the Atlantic basin”. In: <em>Weather and Forecasting</em> 10.2, pp. 425-432. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/HessElsnerLaSeur1995.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/HessElsnerLaSeur1995.pdf</a>.</p>
 <p>Triantafyllou, G, J. B. Elsner, A. Lascaratos, C. Koutitas and A. Tsonis (1995). “Structure and properties of the attractor of a marine dynamical system”. In: <em>Mathematical and Computer Modelling</em> 21.6, pp. 73-86.</p>
 <p>Tsonis, A. and J. B. Elsner (1995). “Testing for scaling in natural forms and observables”. In: <em>Journal of Statistical Physics</em> 81.5-6, pp. 869-880.</p>
 </div>
-<div id="section-24" class="section level2">
+<div id="section-25" class="section level2">
 <h2>1994</h2>
 <p>Elsner, J. B. and J. Honore (1994). “Ignoring chaos”. In: <em>Bulletin of the American Meteorological Society</em> 75.10, pp. 1846-1847.</p>
 <p>Elsner, J. B. and C. Schmertmann (1994). “Assessing forecast skill through cross validation”. In: <em>Weather and Forecasting</em> 9.4, pp. 619-624. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerSchmertmann1994.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerSchmertmann1994.pdf</a>.</p>
@@ -466,7 +567,7 @@ $(document).ready(function () {
 <p>Tsonis, A, G. Triantafyllou, J. B. Elsner, J. Holdzkom and A. Kirwan Jr (1994). “An investigation of the ability of nonlinear methods to infer dynamics from observables”. In: <em>Bulletin of the American Meteorological Society</em> 75.9, pp. 1623-1634. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/TsonisTriantafyllouElsnerHoldzhamKirwan1994.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/TsonisTriantafyllouElsnerHoldzhamKirwan1994.pdf</a>.</p>
 <p>Tsonis, A, G. Triantafyllou, J. B. Elsner and others (1994). “Searching for determinism in observed data: a review of the issues involved”. In: <em>Nonlinear Processes in Geophysics</em> 1.1, pp. 12-25.</p>
 </div>
-<div id="section-25" class="section level2">
+<div id="section-26" class="section level2">
 <h2>1993</h2>
 <p>Elsner, J. B. and C. P. Schmertmann (1993). “Improving extended-range seasonal predictions of intense Atlantic hurricane activity”. In: <em>Weather and Forecasting</em> 8, pp. 345-351. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerSchmertmann1993.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerSchmertmann1993.pdf</a>.</p>
 <p>Elsner, J. B. and A. Tsonis (1993a). “Complexity and predictability of hourly precipitation”. In: <em>Journal of the Atmospheric Sciences</em> 50.3, pp. 400-405. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerTsonis1993.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerTsonis1993.pdf</a>.</p>
@@ -475,7 +576,7 @@ $(document).ready(function () {
 <p>Tsonis, A. A, J. B. Elsner and P. A. Tsonis (1993). “On the existence of scaling in DNA sequences”. In: <em>Biochemical and Biophysical Research Communications</em> 197.3, pp. 1288-1295. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/TsonisElsnerTsonis1993.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/TsonisElsnerTsonis1993.pdf</a>.</p>
 <p>Tsonis, A, J. B. Elsner and K. Georgakakos (1993). “Estimating the dimension of weather and climate attractors: important issues about the procedure and interpretation”. In: <em>Journal of the Atmospheric Sciences</em> 50.15, pp. 2549-2555. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/TsonisElsnerGeorgakakos1993.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/TsonisElsnerGeorgakakos1993.pdf</a>.</p>
 </div>
-<div id="section-26" class="section level2">
+<div id="section-27" class="section level2">
 <h2>1992</h2>
 <p>Elsner, J. B. (1992a). “A description of low-frequency atmospheric oscillations over the extratropical Northern Hemisphere using singular spectrum analysis”. In: <em>Geophysical Research Letters</em> 19.17, pp. 1775-1778.</p>
 <p>Elsner, J. B. (1992b). “Predicting time series using a neural network as a method of distinguishing chaos from noise”. In: <em>Journal of Physics A: Mathematical and General</em> 25.4, p. 843.</p>
@@ -483,7 +584,7 @@ $(document).ready(function () {
 <p>Tsonis, A. and J. B. Elsner (1992a). “Nonlinear prediction as a way of distinguishing chaos from random fractal sequences”. In: <em>Nature</em> 358, pp. 217-220.</p>
 <p>Tsonis, A. and J. B. Elsner (1992b). “Oscillating global temperature”. In: <em>Nature</em> 356, p. 751.</p>
 </div>
-<div id="section-27" class="section level2">
+<div id="section-28" class="section level2">
 <h2>1991</h2>
 <p>Elsner, J. B. and A. Tsonis (1991a). “A note on the spatial structure of the covariability of observed Northern Hemisphere surface air temperatures”. In: <em>Pure and Applied Geophysics</em> 137.1-2, pp. 133-146.</p>
 <p>Elsner, J. B. and A. Tsonis (1991b). “Comparisons of observed Northern Hemisphere surface air temperature records”. In: <em>Geophysical Research Letters</em> 18.7, pp. 1229-1232.</p>
@@ -491,12 +592,12 @@ $(document).ready(function () {
 <p>Tsonis, A. A, J. B. Elsner and P. A. Tsonis (1991). “Periodicity in DNA coding sequences: implications in gene evolution”. In: <em>Journal of Theoretical Biology</em> 151.3, pp. 323-331.</p>
 <p>Tsonis, A. and J. B. Elsner (1991). “Multiple fractal dimensions in snow”. In: <em>Atmospheric Research</em> 26.1, pp. 13-17.</p>
 </div>
-<div id="section-28" class="section level2">
+<div id="section-29" class="section level2">
 <h2>1990</h2>
 <p>Tsonis, A. and J. B. Elsner (1990a). “Comments on “Dimension analysis of climatic data”. In: <em>Journal of Climate</em> 3.12, pp. 1502-1505. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/TsonisElsner1990.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/TsonisElsner1990.pdf</a>.</p>
 <p>Tsonis, A. and J. B. Elsner (1990b). “Multiple attractors, fractal basins and longterm climate dynamics”. In: <em>Contributions to atmospheric physics</em> 63.3-4, pp. 171-176. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/TsonisElsner1990.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/TsonisElsner1990.pdf</a>.</p>
 </div>
-<div id="section-29" class="section level2">
+<div id="section-30" class="section level2">
 <h2>1989</h2>
 <p>Elsner, J. B, W. H. Drag and J. K. Last (1989). “Synoptic weather patterns associated with the Milwaukee, Wisconsin flash flood of 6 August 1986”. In: <em>Weather and Forecasting</em> 4.4, pp. 537-554. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerDragLast1989.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerDragLast1989.pdf</a>.</p>
 <p>Elsner, J. B, J. Mecikalski and A. Tsonis (1989). “A shore-parallel cloud band over Lake Michigan”. In: <em>Monthly Weather Review</em> 117.12, pp. 2822-2823. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerMecikalskiTsonis1989.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/ElsnerMecikalskiTsonis1989.pdf</a>.</p>
@@ -504,11 +605,11 @@ $(document).ready(function () {
 <p>Tsonis, A. and J. B. Elsner (1989a). “Chaos, strange attractors, and weather”. In: <em>Bulletin of the American Meteorological Society</em> 70.1, pp. 14-23. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/TsonisElsner1989.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/TsonisElsner1989.pdf</a>.</p>
 <p>Tsonis, A. and J. B. Elsner (1989b). “Testing the global warming hypothesis”. In: <em>Geophysical Research Letters</em> 16.8, pp. 795-797. URL: <a href="http://myweb.fsu.edu/jelsner/PDF/Research/TsonisElsner1989.pdf" class="uri">http://myweb.fsu.edu/jelsner/PDF/Research/TsonisElsner1989.pdf</a>.</p>
 </div>
-<div id="section-30" class="section level2">
+<div id="section-31" class="section level2">
 <h2>1988</h2>
 <p>Tsonis, A. and J. B. Elsner (1988). “The weather attractor over very short timescales”. In: <em>Nature</em> 333, pp. 545-547.</p>
 </div>
-<div id="section-31" class="section level2">
+<div id="section-32" class="section level2">
 <h2>1987</h2>
 <p>Sikdar, D. N. and J. B. Elsner (1987a). “Intra-seasonal variability of rainfall and atmospheric energetics over northeast Brazil during the rainy season of 1979”. In: <em>Tellus A</em> 39.1, pp. 49-60.</p>
 <p>Sikdar, D. N. and J. B. Elsner (1987b). “Large-scale circulation departures related to wet episodes in North-East Brazil”. In: <em>Quarterly Journal of the Royal Meteorological Society</em> 113.476, pp. 567-580.</p>
