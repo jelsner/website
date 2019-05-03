@@ -54,6 +54,27 @@ library(RefManageR)
 
 *************
 
+# Students Graduated
+
+* PhD: Matthew Carter (Meteorology), Brian Bossak (Meteorology), Jeff Dickey (Geography), Todd Albert (Geography), Emily Fogarty (Geography), Kelsey Scheitlin (Geography), Heather Gamper (co) (Geography), Jill Trepanier (Geography), Robert Hodges (Geography), Nam-Young Kang (Geophysical Fluid Dynamics Institute),  Sarah Strazzo (Geography), Erik Fraza (Geography), Peter Wood (co) (Geography), Holly Widen (Geography), John Humphreys (Geography), Tyler Fricker (Geography)
+
+* MS: Vincint Tino (Meteorology), Jason Hess (Meteorology), Todd Kimberlain (Meteorology), Matthew Carter (Meteorology), Kwan Kong (Meteorology), David Whitehead (Meteorology), Weitan Pan (co) (Engineering), Bethany Kocher (Meteorology), Marc Cooper (Geography), Ethan Gibney (Geography), Emily Fogarty (Geography), Jill Malmstadt (Geography), Robert Hodges (Geography), Ona Strikas (Geography), Laura Michaels (Geography), Tyler Fricker (Geography), Emily Ryan (Geography)
+
+# Grant Totals
+
+* Risk Prediction Initiative $355,475
+* National Science Foundation $1,306,348 
+* National Oceanic and Atmospheric Administration $96,000
+* Florida State University $122,500
+
+# Awards
+
+* Holder of the Earl & Sophia Shaw Endowed Chair in Geography, FSU.
+* Graduate Mentor Award, 2019, FSU.
+* Gilbert F. White Distinguished Lecture Award, 2013, American Geophysical Union.
+* Teaching Incentive Program Award, 1996, FSU.
+* Outstanding Student Teacher Award, 1987, UWM.
+
 # Academic Books
 
 ```{r echo=FALSE, results="asis",comment=FALSE}
@@ -81,16 +102,3 @@ for (date in dates) {
 }
 
 ```
-
-# Grants Running Totals
-
-* Risk Prediction Initiative $355,475
-* National Science Foundation $1,306,348 
-* National Oceanic and Atmospheric Administration $96,000
-* Florida State University $122,500
-
-# Students Graduated
-
-* PhD: Matthew Carter (Meteorology), Brian Bossak (Meteorology), Jeff Dickey (Geography), Todd Albert (Geography), Emily Fogarty (Geography), Kelsey Scheitlin (Geography), Heather Gamper (co) (Geography), Jill Trepanier (Geography), Robert Hodges (Geography), Nam-Young Kang (Geophysical Fluid Dynamics Institute),  Sarah Strazzo (Geography), Erik Fraza (Geography), Peter Wood (co) (Geography), Holly Widen (Geography), John Humphreys (Geography), Tyler Fricker (Geography)
-
-* MS: Vincint Tino (Meteorology), Jason Hess (Meteorology), Todd Kimberlain (Meteorology), Matthew Carter (Meteorology), Kwan Kong (Meteorology), David Whitehead (Meteorology), Weitan Pan (co) (Engineering), Bethany Kocher (Meteorology), Marc Cooper (Geography), Ethan Gibney (Geography), Emily Fogarty (Geography), Jill Malmstadt (Geography), Robert Hodges (Geography), Ona Strikas (Geography), Laura Michaels (Geography), Tyler Fricker (Geography), Emily Ryan (Geography)
