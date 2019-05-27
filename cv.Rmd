@@ -70,7 +70,7 @@ library(RefManageR)
 # Awards
 
 * Holder of the Earl & Sophia Shaw Endowed Chair in Geography, FSU.
-* Graduate Mentor Award, 2019, FSU.
+* University Graduate Mentor Award, 2019, FSU.
 * Gilbert F. White Distinguished Lecture Award, 2013, American Geophysical Union.
 * Teaching Incentive Program Award, 1996, FSU.
 * Outstanding Student Teacher Award, 1987, UWM.
