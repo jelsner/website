@@ -35,21 +35,21 @@ library(RefManageR)
 *************
 
 # Professional Experience
-* 2015 - present
-    + Chair, Department of Geography, Florida State University
 * 2008 - present
     + Earl B. and Sophia H. Shaw Professor, Department of Geography, Florida State University
-* 2001 - 16
+* 2015 - 2021
+    + Chair, Department of Geography, Florida State University
+* 2001 - 2016
     + President of *Climatek Inc.*
-* 2012 - 16
-    + Associate, Geophysical Fluid Dynamics Institute, Florida State University
-* 2001 - 08
+* 2012 - present
+    + Faculty Associate, Geophysical Fluid Dynamics Institute, Florida State University
+* 2001 - 2008
     + Professor, Department of Geography, Florida State University
-* 1998 - 01
+* 1998 - 2001
     + Associate Professor, Department of Geography, Florida State University
-* 1995 - 98
+* 1995 - 1998
     + Associate Professor, Department of Meteorology, Florida State University
-* 1990 - 95
+* 1990 - 1995
     + Assistant Professor, Department of Meteorology, Florida State University
 
 *************
