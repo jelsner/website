@@ -37,12 +37,12 @@ library(RefManageR)
 # Professional Experience
 * 2008 - present
     + Earl B. and Sophia H. Shaw Professor, Department of Geography, Florida State University
+* 2012 - present
+    + Faculty Associate, Geophysical Fluid Dynamics Institute, Florida State University
 * 2015 - 2021
     + Chair, Department of Geography, Florida State University
 * 2001 - 2016
     + President of *Climatek Inc.*
-* 2012 - present
-    + Faculty Associate, Geophysical Fluid Dynamics Institute, Florida State University
 * 2001 - 2008
     + Professor, Department of Geography, Florida State University
 * 1998 - 2001
@@ -56,7 +56,7 @@ library(RefManageR)
 
 # Students Graduated
 
-* PhD: Matthew Carter (Meteorology), Brian Bossak (Meteorology), Jeff Dickey (Geography), Todd Albert (Geography), Emily Fogarty (Geography), Kelsey Scheitlin (Geography), Heather Gamper (co) (Geography), Jill Trepanier (Geography), Robert Hodges (Geography), Nam-Young Kang (Geophysical Fluid Dynamics Institute),  Sarah Strazzo (Geography), Erik Fraza (Geography), Peter Wood (co) (Geography), Holly Widen (Geography), John Humphreys (Geography), Tyler Fricker (Geography)
+* PhD: Matthew Carter (Meteorology), Brian Bossak (Meteorology), Jeff Dickey (Geography), Todd Albert (Geography), Emily Fogarty (Geography), Kelsey Scheitlin (Geography), Heather Gamper (co) (Geography), Jill Trepanier (Geography), Robert Hodges (Geography), Nam-Young Kang (Geophysical Fluid Dynamics Institute),  Sarah Strazzo (Geography), Erik Fraza (Geography), Peter Wood (co) (Geography), Holly Widen (Geography), John Humphreys (Geography), Tyler Fricker (Geography), Gregory Burris (co) (Geography), Zoe Schroder (Geography)
 
 * MS: Vincint Tino (Meteorology), Jason Hess (Meteorology), Todd Kimberlain (Meteorology), Matthew Carter (Meteorology), Kwan Kong (Meteorology), David Whitehead (Meteorology), Weitan Pan (co) (Engineering), Bethany Kocher (Meteorology), Marc Cooper (Geography), Ethan Gibney (Geography), Emily Fogarty (Geography), Jill Malmstadt (Geography), Robert Hodges (Geography), Ona Strikas (Geography), Laura Michaels (Geography), Tyler Fricker (Geography), Emily Ryan (Geography)
 
