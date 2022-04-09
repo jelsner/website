@@ -69,6 +69,7 @@ library(RefManageR)
 
 # Awards
 
+* Late Career Research Award College of Social Sciences and Public Policy, FSU.
 * Earl & Sophia Shaw Endowed Chair in Geography, FSU.
 * University Graduate Mentor Award, 2019, FSU.
 * Gilbert F. White Distinguished Lecture Award, 2013, American Geophysical Union.
