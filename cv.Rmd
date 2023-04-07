@@ -58,7 +58,7 @@ library(RefManageR)
 
 * PhD: Matthew Carter (Meteorology), Brian Bossak (Meteorology), Jeff Dickey (Geography), Todd Albert (Geography), Emily Fogarty (Geography), Kelsey Scheitlin (Geography), Heather Gamper (co) (Geography), Jill Trepanier (Geography), Robert Hodges (Geography), Nam-Young Kang (Geophysical Fluid Dynamics Institute),  Sarah Strazzo (Geography), Erik Fraza (Geography), Peter Wood (co) (Geography), Holly Widen (Geography), John Humphreys (Geography), Tyler Fricker (Geography), Gregory Burris (co) (Geography), Zoe Schroder (Geography)
 
-* MS: Vincint Tino (Meteorology), Jason Hess (Meteorology), Todd Kimberlain (Meteorology), Matthew Carter (Meteorology), Kwan Kong (Meteorology), David Whitehead (Meteorology), Weitan Pan (co) (Engineering), Bethany Kocher (Meteorology), Marc Cooper (Geography), Ethan Gibney (Geography), Emily Fogarty (Geography), Jill Malmstadt (Geography), Robert Hodges (Geography), Ona Strikas (Geography), Laura Michaels (Geography), Tyler Fricker (Geography), Emily Ryan (Geography)
+* MS: Vincint Tino (Meteorology), Jason Hess (Meteorology), Todd Kimberlain (Meteorology), Matthew Carter (Meteorology), Kwan Kong (Meteorology), David Whitehead (Meteorology), Weitan Pan (co) (Engineering), Bethany Kocher (Meteorology), Marc Cooper (Geography), Ethan Gibney (Geography), Emily Fogarty (Geography), Jill Malmstadt (Geography), Robert Hodges (Geography), Ona Strikas (Geography), Laura Michaels (Geography), Tyler Fricker (Geography), Emily Ryan (Geography), Zach Law (Geography)
 
 # Grant Totals
 
@@ -69,6 +69,7 @@ library(RefManageR)
 
 # Awards
 
+* Late Career Research Award College of Social Sciences and Public Policy, 2022, FSU.
 * Earl & Sophia Shaw Endowed Chair in Geography, FSU.
 * University Graduate Mentor Award, 2019, FSU.
 * Gilbert F. White Distinguished Lecture Award, 2013, American Geophysical Union.

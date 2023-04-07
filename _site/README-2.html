@@ -11,13 +11,9 @@
 
 
 
-<title>James B. Elsner</title>
+<title>README-2</title>
 
-<<<<<<< HEAD
-<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
-=======
 <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
->>>>>>> cd34f8660d96bbfe3f9a70fe099c114bf9a70a8f
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -36,8 +32,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -58,7 +52,6 @@ if (window.hljs) {
   }
 }
 </script>
-
 
 
 
@@ -88,9 +81,6 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
 }
 pre code {
   padding: 0;
@@ -148,15 +138,11 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -185,8 +171,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -194,9 +180,16 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -240,7 +233,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -264,10 +257,6 @@ $(document).ready(function () {
   </a>
 </li>
 <li>
-<<<<<<< HEAD
-  <a href="https://github.com/jelsner">
-    <span class="fa fa-github fa-2x"></span>
-=======
   <a href="https://speakerdeck.com/jelsner">
     <span class="fa fa-slideshare fa-2x"></span>
      
@@ -279,16 +268,9 @@ $(document).ready(function () {
     <span class="fa fa-video-camera fa-2x"></span>
      
     Videos
->>>>>>> cd34f8660d96bbfe3f9a70fe099c114bf9a70a8f
      
-    GitHub
+    <span class="caret"></span>
   </a>
-<<<<<<< HEAD
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-=======
   <ul class="dropdown-menu" role="menu">
     <li>
       <a href="https://james-elsner.wistia.com/projects">
@@ -313,7 +295,6 @@ $(document).ready(function () {
      
   </a>
 </li>
->>>>>>> cd34f8660d96bbfe3f9a70fe099c114bf9a70a8f
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -323,14 +304,14 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">James B. Elsner</h1>
 
 </div>
 
 
-<p>Earl B. and Sophia H. Shaw professor <a
-href="http://geography.fsu.edu">Department of Geography</a> Florida
-State University.</p>
+<div id="about" class="section level1">
+<h1>About</h1>
+<p>The source code that is used to generate my personal website <a href="www.alex-singleton.com">www.alex-singleton.com</a>.</p>
+</div>
 
 <hr>
 <script>
