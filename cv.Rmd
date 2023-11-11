@@ -1,7 +1,7 @@
 ---
 title: "James B. Elsner"
 params:
-   address: Department of Geography, Florida State University
+   address: Department of Geography, Florida State University, Retired
    email: jelsner@fsu.edu
 ---
 
@@ -35,9 +35,9 @@ library(RefManageR)
 *************
 
 # Professional Experience
-* 2008 - present
+* 2008 - 2023
     + Earl B. and Sophia H. Shaw Professor, Department of Geography, Florida State University
-* 2012 - present
+* 2012 - 2023
     + Faculty Associate, Geophysical Fluid Dynamics Institute, Florida State University
 * 2015 - 2021
     + Chair, Department of Geography, Florida State University
