@@ -1,7 +1,6 @@
 ---
 title: "James B. Elsner"
 params:
-   address: Department of Geography, Florida State University, Retired
    email: jelsner@fsu.edu
 ---
 
@@ -27,10 +26,10 @@ library(RefManageR)
 
 # Education
 
-* 1988 - 90: PostDoc - University of Wisconsin-Milwaukee
-* 1984 - 88: PhD in Geosciences - University of Wisconsin-Milwaukee
-* 1981 - 84: MSc in Meteorology - University of Wisconsin-Milwaukee
-* 1977 - 81: BSc in Meteorology - University of Wisconsin-Milwaukee
+* 1988 - 1990: PostDoc - University of Wisconsin-Milwaukee
+* 1984 - 1988: PhD in Geosciences - University of Wisconsin-Milwaukee
+* 1981 - 1984: MSc in Meteorology - University of Wisconsin-Milwaukee
+* 1977 - 1981: BSc in Meteorology - University of Wisconsin-Milwaukee
 
 *************
 
@@ -54,11 +53,42 @@ library(RefManageR)
 
 *************
 
-# Students Graduated
+# PhD Students Graduated
 
-* PhD: Matthew Carter (Meteorology), Brian Bossak (Meteorology), Jeff Dickey (Geography), Todd Albert (Geography), Emily Fogarty (Geography), Kelsey Scheitlin (Geography), Heather Gamper (co) (Geography), Jill Trepanier (Geography), Robert Hodges (Geography), Nam-Young Kang (Geophysical Fluid Dynamics Institute),  Sarah Strazzo (Geography), Erik Fraza (Geography), Peter Wood (co) (Geography), Holly Widen (Geography), John Humphreys (Geography), Tyler Fricker (Geography), Gregory Burris (co) (Geography), Zoe Schroder (Geography)
+- Matthew M. Carter, _A quantitative precipitation forecast experiment for Puerto Rico_, 1999
+- Brian H. Bossak, _Early nineteenth-century United States hurricanes: A GIS tool and climate analysis_, 2003
+- Jeffrey James Dickey, _Improved flood prediction from basin elevation distribution_, 2006
+- Todd H. Albert, _Assessing glacier mass balances from small tropical glaciers to the large ice sheet of Greenland_, 2007
+- Emily A. Fogarty, _Network analysis of hurricanes affecting the United States_, 2009
+- Kelsey Nicole Scheitlin, _Construction and application of a spatial hurricane climatology_, 2010
+- Heather A. Gamper (co), _Effects of scale insects on forest dynamics in tropical montane oak forests of Veracruz, Mexico_, 2012
+- Jill Trepanier, _Quantifying extreme hurricane risk in the North Atlantic and Gulf of Mexico_, 2012
+- Robert Edward Hodges, _Understanding and predicting the regional sun-hurricane count relationship_, 2013
+- Nam-Young Kang, _Global warming and tropical cyclone climate in the western North Pacific_, 2014
+- Sarah Strazzo, _Assessing the ability of climate models to simulate the observed sensitivity of tropical cyclone intensity to sea surface temperature_, 2015
+- Erik Fraza, _Spatial analyses of climatological effects on hurricane intensification rates_, 2016
+- Peter Wood (co)
+- Holly M. Widen, _New methods in tornado risk and vulnerability assessments_, 2016
+- John M. Humphreys, _Traits, Species, and Communities: Integrative Bayesian Approaches to Ecological Biogeography across Geographic, Environmental, Phylogenetic, and Morphological Space_ 2018
+- Tyler Fricker, _A Geography of Tornado Casualties in the United States_, 2019
+- Gregory Burris (co), _Between proxy and instrument: Reconstructing past weather using qualitative human observations in the absence of instrumental and prox records: A case study from Shirley Plantation, Virginia_, 2021
+- Zoe Schroder, _Tornado Outbreak Climatology in the United States (1995–2020): Definitions, Descriptions, and Statistical Analyses_, 2021
+- Efraim Roxas (co), _Critical Vulnerability and Community Care Towards a Resilience from Below_, 2023
 
-* MS: Vincint Tino (Meteorology), Jason Hess (Meteorology), Todd Kimberlain (Meteorology), Matthew Carter (Meteorology), Kwan Kong (Meteorology), David Whitehead (Meteorology), Weitan Pan (co) (Engineering), Bethany Kocher (Meteorology), Marc Cooper (Geography), Ethan Gibney (Geography), Emily Fogarty (Geography), Jill Malmstadt (Geography), Robert Hodges (Geography), Ona Strikas (Geography), Laura Michaels (Geography), Tyler Fricker (Geography), Emily Ryan (Geography), Zach Law (Geography)
+# MS Students Graduated
+
+- Vincint Robert Tino, _A validation of the industrial source complex (ISC2) dispersion model in the Kuwaiti oil fire situation_, 1992 
+- Jason Hess, 
+- Todd Kimberlain, 
+- Matthew M. Carter, _Convective rainfall regions in Puerto Rico_, 1995
+- Kwan Kong (Meteorology), David Whitehead (Meteorology), Weitan Pan (co) (Engineering), Bethany Kocher (Meteorology), Marc Cooper (Geography), Ethan Gibney (Geography), Emily Fogarty (Geography), 
+- Jill Malmstadt, _Pre-landfall intensity as predictor of economic loss from Florida hurricanes, 1900-2007_, 2009
+- Robert Edward Hodges, _Evidence for a solar influence on U.S.-affecting hurricanes_, 2009
+- Ona Strikas,
+- Laura Michaels,
+- Tyler Fricker, _Estimating kinetic energy of U.S. tornadoes_, 2015
+- Emily Ryan, 
+- Zach Law,
 
 # Grant Totals
 
