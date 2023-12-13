@@ -69,7 +69,7 @@ library(RefManageR)
 - Erik Fraza, _Spatial analyses of climatological effects on hurricane intensification rates_, 2016
 - Peter Wood (co)
 - Holly M. Widen, _New methods in tornado risk and vulnerability assessments_, 2016
-- John M. Humphreys, _Traits, Species, and Communities: Integrative Bayesian Approaches to Ecological Biogeography across Geographic, Environmental, Phylogenetic, and Morphological Space_ 2018
+- John M. Humphreys, _Traits, Species, and Communities: Integrative Bayesian Approaches to Ecological Biogeography across Geographic, Environmental, Phylogenetic, and Morphological Space_, 2018
 - Tyler Fricker, _A Geography of Tornado Casualties in the United States_, 2019
 - Gregory Burris (co), _Between proxy and instrument: Reconstructing past weather using qualitative human observations in the absence of instrumental and prox records: A case study from Shirley Plantation, Virginia_, 2021
 - Zoe Schroder, _Tornado Outbreak Climatology in the United States (1995–2020): Definitions, Descriptions, and Statistical Analyses_, 2021
@@ -78,17 +78,23 @@ library(RefManageR)
 # MS Students Graduated
 
 - Vincint Robert Tino, _A validation of the industrial source complex (ISC2) dispersion model in the Kuwaiti oil fire situation_, 1992 
-- Jason Hess, 
-- Todd Kimberlain, 
+- Jason C. Hess, _Improving seasonal predictions of hurricane activity for the Atlantic basin_, 1994
 - Matthew M. Carter, _Convective rainfall regions in Puerto Rico_, 1995
-- Kwan Kong (Meteorology), David Whitehead (Meteorology), Weitan Pan (co) (Engineering), Bethany Kocher (Meteorology), Marc Cooper (Geography), Ethan Gibney (Geography), Emily Fogarty (Geography), 
+- Todd B. Kimberlain, _Baroclinically-initiated hurricanes of the North Atlantic basin_, 1996
+- Kwan Kong, _Landfall and post-landfall structure of Hurricane Danny and the possibility of retrieving vertical velocity profiles from rawinsonde soundings_, 1999
+- David Whitehead, _An evaluation of coastal county hurricane vulnerability_, 1999
+- Wei tan Pan (co), 
+- Bethany Kocher, _Tropical cyclones and the North Atlantic oscillation_, 2000
+- Marc D. Cooper, _The association of human activities with land degradation in the Republic of Botswana_, 2000
+- Ethan J. Gibney, _An assessment of potential for economic loss to residential property in United States coastal counites [i.e., counties] from tropical cyclones using a geographical information system_, 2002
+- Emily A. Fogarty, _Variations in typhoon landfalls over China_, 2004
 - Jill Malmstadt, _Pre-landfall intensity as predictor of economic loss from Florida hurricanes, 1900-2007_, 2009
 - Robert Edward Hodges, _Evidence for a solar influence on U.S.-affecting hurricanes_, 2009
-- Ona Strikas,
-- Laura Michaels,
+- Ona Marie Strikas, _Modeling the spatial differentiation in cloud-to-ground lightning: A case study in Atlanta, Georgia, USA_, 2023
+- Laura E. Michaels, _Spatial and temporal characteristics of the population bias in U.S. tornado reports_, 2013
 - Tyler Fricker, _Estimating kinetic energy of U.S. tornadoes_, 2015
-- Emily Ryan, 
-- Zach Law,
+- Emily Ryan, _Florida's Tornado Climatology: Occurrence Rates, Casualties, and Property Losses_, 2018
+- Zachery Taylor Law, _Wildfires in the Apalachicola National Forest, USA from 1992–2018: Relationships to Soil Dryness and Lightning_, 2022
 
 # Grant Totals
 
