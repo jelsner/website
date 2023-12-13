@@ -1,6 +1,7 @@
 ---
-title: "James B. Elsner"
+title: "James Brian Elsner"
 params:
+   address: Tallahassee, Florida and Sofia, Bulgaria
    email: jelsner@fsu.edu
 ---
 
