@@ -8,7 +8,7 @@ editor_options:
 library(RefManageR)
 ```
 
-# Academic Books
+# Books
 
 ```{r echo=FALSE, results="asis",comment=FALSE}
 file_books <- ReadBib("books.bib")
