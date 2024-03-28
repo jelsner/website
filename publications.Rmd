@@ -23,7 +23,7 @@ for (date in dates) {
 
 ```
 
-# Refereed Academic Journal Articles
+# Refereed Journal Articles
 
 ```{r echo=FALSE, results="asis",comment=FALSE}
 file_journals <- ReadBib("journals.bib")
