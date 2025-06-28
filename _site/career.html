@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>career.knit</title>
+
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">James Brian Elsner</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="narrative.html">
+    <span class="fa fa-file  fa-2x"></span>
+     
+    Narrative
+  </a>
+</li>
+<li>
+  <a href="career.html">
+    <span class="fa fa-file  fa-2x"></span>
+     
+    Summary
+  </a>
+</li>
+<li>
+  <a href="publications.html">
+    <span class="fa fa-book  fa-2x"></span>
+     
+    Publications
+  </a>
+</li>
+<li>
+  <a href="cv.html">
+    <span class="fa fa-file  fa-2x"></span>
+     
+    Vita
+  </a>
+</li>
+<li>
+  <a href="https://github.com/jelsner">
+    <span class="fa fa-github fa-2x"></span>
+     
+    GitHub
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<p>Over the past three decades, my research has centered on
+understanding the evolving risks posed by atmospheric hazards,
+especially tropical cyclones and tornadoes, within a changing climate.
+By combining rigorous statistical methods, nonlinear systems analysis,
+and a focus on societal impact, I have worked to bridge gaps between
+atmospheric dynamics and practical applications in forecasting, risk
+management, and climate adaptation. This document summarizes key
+contributions that have collectively advanced the science of climate
+extremes and informed policy and resilience strategies.</p>
+<hr />
+<div id="the-intensification-of-tropical-cyclones-in-a-warming-world"
+class="section level2">
+<h2>The intensification of tropical cyclones in a warming world</h2>
+<p>One of my most cited works, <em>The increasing intensity of the
+strongest tropical cyclones</em> (Elsner, Kossin, &amp; Jagger, 2008),
+offered compelling statistical evidence that the most intense hurricanes
+globally are becoming even stronger. By applying quantile regression to
+best-track datasets, we demonstrated that the upper quantiles of maximum
+wind speed distributions are rising more rapidly than median values,
+directly linking sea surface warming to the intensification of the
+strongest storms. This paradigm-shifting finding, published in
+<em>Nature</em>, continues to underpin assessments by the IPCC and
+national climate reports.</p>
+<p><a href="https://doi.org/10.1038/nature07234">DOI:
+10.1038/nature07234</a></p>
+<p>This work was complemented by further studies that explored the
+trade-off between frequency and intensity in global cyclones, revealing
+that while the total number of storms may fluctuate or decline slightly,
+the proportion of high-intensity systems is increasing (Kang &amp;
+Elsner, 2015).</p>
+<p><a href="https://doi.org/10.1038/nclimate2640">DOI:
+10.1038/nclimate2640</a></p>
+<p>In recent extensions, I have examined the continuing rise in maximum
+intensities, validating and extending the 2008 findings with updated
+datasets and statistical refinements.</p>
+<p><a href="https://doi.org/10.1175/BAMS-D-19-0044.1">DOI:
+10.1175/BAMS-D-19-0044.1</a></p>
+<hr />
+</div>
+<div id="statistical-climatology-and-prediction-of-hurricanes"
+class="section level2">
+<h2>Statistical climatology and prediction of hurricanes</h2>
+<p>My monograph <em>Hurricanes of the North Atlantic: Climate and
+Society</em> (Elsner &amp; Kara, 1999) laid a foundation for integrating
+climate variability with hurricane impacts, bridging statistical
+climatology with societal concerns.</p>
+<p>Oxford University Press, 1999.</p>
+<p>Building on this, I advanced probabilistic models for hurricane risk.
+In <em>Climatology models for extreme hurricane winds near the United
+States</em> (Jagger &amp; Elsner, 2006), we used extreme value theory to
+estimate return levels of hurricane winds, critical for coastal
+engineering and insurance.</p>
+<p><a href="https://doi.org/10.1175/JCLI3917.1">DOI:
+10.1175/JCLI3917.1</a></p>
+<p>Similarly, in <em>Prediction models for annual U.S. hurricane
+counts</em> (Elsner &amp; Jagger, 2006), we developed statistical
+frameworks incorporating ENSO and NAO indices to improve seasonal
+forecasting skill.</p>
+<p><a href="https://doi.org/10.1175/JCLI3823.1">DOI:
+10.1175/JCLI3823.1</a></p>
+<p>A hierarchical Bayesian approach later allowed more nuanced seasonal
+hurricane outlooks, capturing uncertainty explicitly (Elsner &amp;
+Jagger, 2004).</p>
+<p><a
+href="https://doi.org/10.1175/1520-0442(2004)017%3C2813:HBAOSH%3E2.0.CO;2">DOI:
+10.1175/1520-0442(2004)017&lt;2813:HBAOSH&gt;2.0.CO;2</a></p>
+<hr />
+</div>
+<div id="hurricanes-climate-change-and-long-term-variability"
+class="section level2">
+<h2>Hurricanes, climate change, and long-term variability</h2>
+<p>An important thread in my research has been detecting climate signals
+in hurricane data. In <em>Changes in the rates of North Atlantic major
+hurricane activity during the 20th century</em> (Elsner, Jagger, &amp;
+Niu, 2000), we identified a significant uptick in major hurricane
+frequencies after the 1940s, linked to multidecadal ocean
+variability.</p>
+<p><a href="https://doi.org/10.1029/2000GL011631">DOI:
+10.1029/2000GL011631</a></p>
+<p>I also examined how El Niño events modulate U.S. landfall
+probabilities, initially revisiting the topic in a seminal <em>Bulletin
+of the American Meteorological Society</em> paper that became a standard
+reference (Bove et al., 1998).</p>
+<p><a
+href="https://doi.org/10.1175/1520-0477(1998)079%3C2477:TEONUL%3E2.0.CO;2">DOI:
+10.1175/1520-0477(1998)079&lt;2477:TEONUL&gt;2.0.CO;2</a></p>
+<p>Later, we documented secular shifts in the ENSO-hurricane
+relationship, highlighting how anthropogenic warming may be altering
+traditional teleconnections (Elsner et al., 2001).</p>
+<p><a href="https://doi.org/10.1029/2001GL013669">DOI:
+10.1029/2001GL013669</a></p>
+<hr />
+</div>
+<div
+id="nonlinear-dynamics-chaos-and-complex-systems-in-atmospheric-science"
+class="section level2">
+<h2>Nonlinear dynamics, chaos, and complex systems in atmospheric
+science</h2>
+<p>A parallel and influential thread of my work involves exploring
+atmospheric variability through the lens of nonlinear systems and chaos.
+Together with Anastasios Tsonis, we introduced singular spectrum
+analysis (SSA) to climate science, systematically decomposing time
+series to identify low-frequency climate modes and separate noise from
+signal. Our book <em>Singular Spectrum Analysis: A New Tool in Time
+Series Analysis</em> (Elsner &amp; Tsonis, 1996, expanded 2013) became a
+cornerstone text for climate statisticians.</p>
+<p><a href="https://doi.org/10.1007/978-1-4612-2354-0">DOI:
+10.1007/978-1-4612-2354-0</a></p>
+<p>In <em>Nonlinear prediction, chaos, and noise</em> (Elsner &amp;
+Tsonis, 1992) and <em>Nonlinear prediction as a way of distinguishing
+chaos from random fractal sequences</em> (Tsonis &amp; Elsner, 1992), we
+developed frameworks to diagnose chaotic dynamics in meteorological
+records, clarifying the limits of predictability.</p>
+<p><a
+href="https://doi.org/10.1175/1520-0477(1992)073%3C0049:NPCAN%3E2.0.CO;2">DOI:
+10.1175/1520-0477(1992)073&lt;0049:NPCAN&gt;2.0.CO;2</a></p>
+<div id="network-analysis-of-climate-extremes" class="section level3">
+<h3>Network analysis of climate extremes</h3>
+<p>Building on nonlinear perspectives, I pioneered network approaches to
+analyze hurricane time series. In <em>Visibility network of United
+States hurricanes</em> (Elsner, Jagger, &amp; Fogarty, 2009), we
+converted temporal sequences into complex networks, uncovering
+structural properties that revealed novel insights into clustering and
+persistence.</p>
+<p><a href="https://doi.org/10.1029/2009GL039129">DOI:
+10.1029/2009GL039129</a></p>
+<p>These methods have since been adapted to tornado time series and even
+to multi-decadal reconstructions of paleostorm activity.</p>
+<hr />
+</div>
+</div>
+<div id="tornado-climatology-and-societal-impacts"
+class="section level2">
+<h2>Tornado climatology and societal impacts</h2>
+<p>Turning to severe convective storms, my research documented important
+spatial and temporal changes in U.S. tornado activity. In <em>The
+increasing efficiency of tornado days in the United States</em> (Elsner,
+Elsner, &amp; Jagger, 2015), we showed that while the number of days
+with tornadoes remains roughly constant, the number of tornadoes per day
+is increasing, with implications for outbreak dynamics.</p>
+<p><a href="https://doi.org/10.1007/s00382-015-2537-8">DOI:
+10.1007/s00382-015-2537-8</a></p>
+<p>Our work on tornado casualties—<em>The relationship between elevation
+roughness and tornado activity</em> (Elsner et al., 2016)—highlighted
+how terrain modulates tornado occurrence, informing local risk
+models.</p>
+<p><a href="https://doi.org/10.1175/JAMC-D-15-0168.1">DOI:
+10.1175/JAMC-D-15-0168.1</a></p>
+<p>In <em>A spatial point process model for violent tornado occurrence
+in the U.S. Great Plains</em> (Elsner et al., 2015), we integrated
+spatial statistics to map hot spots of tornado risk, blending
+meteorological and geographic perspectives.</p>
+<p><a href="https://doi.org/10.1007/s11004-014-9530-z">DOI:
+10.1007/s11004-014-9530-z</a></p>
+<hr />
+</div>
+<div
+id="bridging-fundamental-understanding-and-real-world-decision-making"
+class="section level2">
+<h2>Bridging fundamental understanding and real-world decision
+making</h2>
+<p>Throughout my career, I have aimed to translate scientific advances
+into frameworks that support planning and resilience. Our <em>Bayesian
+analysis of U.S. hurricane climate</em> (Elsner &amp; Bossak, 2001)
+explicitly addressed forecast uncertainty, paving the way for
+probabilistic hazard communication.</p>
+<p><a
+href="https://doi.org/10.1175/1520-0442(2001)014%3C4341:BAOUSC%3E2.0.CO;2">DOI:
+10.1175/1520-0442(2001)014&lt;4341:BAOUSC&gt;2.0.CO;2</a></p>
+<p>Similarly, research linking hurricane wind extremes to economic
+losses (Murnane &amp; Elsner, 2012) provided quantitative bases for
+insurance and infrastructure policies.</p>
+<p><a href="https://doi.org/10.1029/2012GL052646">DOI:
+10.1029/2012GL052646</a></p>
+<p>More recently, I’ve focused on coupling wind and surge risks to
+support compound hazard models critical for coastal cities like
+Galveston and Miami.</p>
+<hr />
+</div>
+<div id="conclusion-advancing-climate-risk-science-in-a-warming-world"
+class="section level2">
+<h2>Conclusion: advancing climate risk science in a warming world</h2>
+<p>Taken together, this corpus of work has helped shape how scientists,
+planners, and policymakers understand the evolving risks from hurricanes
+and tornadoes under climate change. From identifying intensification
+trends in the most powerful tropical cyclones, to pioneering new methods
+for extracting climate signals and representing risks probabilistically,
+my contributions underscore the importance of coupling rigorous data
+analysis with societal relevance. As climate hazards continue to evolve,
+these approaches will remain essential for building resilient
+communities.<a href="#fn1" class="footnote-ref"
+id="fnref1"><sup>1</sup></a></p>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>This document benefited from drafting support by
+OpenAI’s ChatGPT, which helped summarize, organize, and format the
+material.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+<hr>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6248530-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

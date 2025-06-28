@@ -2,6 +2,12 @@ name: "James_Elsner"
 navbar:
   title: "James Brian Elsner"
   left:
+    - text: "Narrative"
+      icon: fa-file  fa-2x
+      href: narrative.html
+    - text: "Summary"
+      icon: fa-file  fa-2x
+      href: career.html
     - text: "Publications"
       icon: fa-book  fa-2x
       href: publications.html

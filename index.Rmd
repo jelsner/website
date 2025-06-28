@@ -6,8 +6,6 @@ Professor Emeritus, Florida State University
 
 ------------------------------------------------------------------------
 
-### Career Impact Summary
-
 Throughout my academic career, I have sought to understand the complex relationships between climate variability, extreme weather events, and societal impacts. My work spans statistical modeling of tropical cyclones and tornadoes, applications of nonlinear dynamics and chaos theory in atmospheric science, and new approaches to hurricane risk assessment under a changing climate.
 
 This summary highlights the major threads of my research, organized by themes that have evolved over time, each anchored by well-cited publications that have shaped the field and influenced policy discussions.
@@ -108,4 +106,4 @@ A unifying feature of my work is advancing new methods for climate analysis.
 
 ### Conclusion
 
-Over more than three decades, my research has advanced understanding of how climate change reshapes extreme weather and how society must adapt. From pioneering nonlinear approaches to leading studies cited by the IPCC, my work bridges fundamental science and practical risk management. I continue to develop integrated frameworks that combine physical, statistical, and socioeconomic data to inform policy and better safeguard communities.
+Over more than three decades, my research has advanced understanding of how climate change reshapes extreme weather and how society must adapt. From pioneering nonlinear approaches to leading studies cited by the IPCC, my work bridges fundamental science and practical risk management.^[This document benefited from drafting support by OpenAI's ChatGPT, which helped organize and format the material.]

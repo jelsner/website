@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>narrative.knit</title>
+
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">James Brian Elsner</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="narrative.html">
+    <span class="fa fa-file  fa-2x"></span>
+     
+    Narrative
+  </a>
+</li>
+<li>
+  <a href="career.html">
+    <span class="fa fa-file  fa-2x"></span>
+     
+    Summary
+  </a>
+</li>
+<li>
+  <a href="publications.html">
+    <span class="fa fa-book  fa-2x"></span>
+     
+    Publications
+  </a>
+</li>
+<li>
+  <a href="cv.html">
+    <span class="fa fa-file  fa-2x"></span>
+     
+    Vita
+  </a>
+</li>
+<li>
+  <a href="https://github.com/jelsner">
+    <span class="fa fa-github fa-2x"></span>
+     
+    GitHub
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<p>My professional journey began at the University of
+Wisconsin-Milwaukee, where I completed a BSc, MSc, and PhD in
+Meteorology and Geosciences (1977–1988), followed by a postdoctoral
+fellowship (1988–1990). It was during this period that my foundational
+interests in atmospheric dynamics and nonlinear systems took root. This
+early work laid the groundwork for later explorations into chaos theory
+and complex geophysical systems.</p>
+<div id="building-a-scholarly-portfolio-at-florida-state-university"
+class="section level2">
+<h2>Building a scholarly portfolio at Florida State University</h2>
+<p>I joined Florida State University (FSU) as an Assistant Professor in
+1990, initially in the Department of Meteorology. Over the next three
+decades, my career progressed through Associate Professor in both
+Meteorology and Geography, to full Professor, and ultimately to holding
+the Earl B. and Sophia H. Shaw Endowed Chair in Geography (2008–2023). I
+also served as Chair of the Department of Geography (2015–2021) and a
+Faculty Associate at the Geophysical Fluid Dynamics Institute
+(2012–2023). In 2024, I was honored with the title of Professor
+Emeritus.</p>
+<p>These roles provided a platform to build a vibrant research program
+that bridges statistical climatology, tropical cyclone science, tornado
+risk, and the mathematics of complex systems.</p>
+</div>
+<div
+id="shaping-the-field-key-publications-and-intellectual-contributions"
+class="section level2">
+<h2>Shaping the field: key publications and intellectual
+contributions</h2>
+<p>My publication record maps this evolution vividly.</p>
+<div id="tropical-cyclone-intensity-and-climate-change"
+class="section level3">
+<h3>Tropical cyclone intensity and climate change</h3>
+<ul>
+<li><strong>“The increasing intensity of the strongest tropical
+cyclones” (Elsner et al., 2008, Nature, DOI:
+10.1038/nature07234)</strong>, with 1458 citations, showed that the
+strongest hurricanes are intensifying globally. This paper became a
+cornerstone in discussions of climate change impacts on extreme
+weather.</li>
+<li><strong>“Trade-off between intensity and frequency of global
+tropical cyclones” (Kang &amp; Elsner, 2015, Nat. Clim. Change, DOI:
+10.1038/nclimate2646)</strong> explored how warming climates might
+redistribute cyclone characteristics.</li>
+</ul>
+</div>
+<div id="statistical-models-and-prediction" class="section level3">
+<h3>Statistical models and prediction</h3>
+<ul>
+<li><p>My book <strong>“Hurricanes of the North Atlantic: Climate and
+Society” (Elsner &amp; Kara, 1999, Oxford University Press)</strong>
+connected atmospheric science with societal impacts.</p></li>
+<li><p><strong>“Prediction models for annual US hurricane counts”
+(Elsner &amp; Jagger, 2006, J. Climate, DOI:
+10.1175/JCLI3822.1)</strong> and related works pioneered Bayesian and
+Poisson-based approaches for seasonal forecasting.</p></li>
+</ul>
+</div>
+<div
+id="nonlinear-dynamics-chaos-and-complex-systems-in-atmospheric-science"
+class="section level3">
+<h3>Nonlinear dynamics, chaos, and complex systems in atmospheric
+science</h3>
+<ul>
+<li><p>Early work on <strong>attractors and dimension
+estimation</strong> with A.A. Tsonis, such as <strong>“Nonlinear
+prediction as a way of distinguishing chaos from random fractal
+sequences” (1992, Nature, DOI: 10.1038/358217a0)</strong>, was
+influential in applying chaos theory to weather data.</p></li>
+<li><p>Later, <strong>“Singular spectrum analysis: a new tool in time
+series analysis” (Elsner &amp; Tsonis, 1996/2013, Springer, DOI:
+10.1007/978-1-4612-3974-1)</strong> equipped climate researchers with a
+framework to extract signals from noisy geophysical series.</p></li>
+<li><p>My work on <strong>network analysis</strong>, notably
+<strong>Emily Fogarty’s dissertation on hurricane networks
+(2009)</strong>, further extended nonlinear system insights into spatial
+interaction structures.</p></li>
+</ul>
+</div>
+<div id="tornado-risk-damage-and-societal-exposure"
+class="section level3">
+<h3>Tornado risk, damage, and societal exposure</h3>
+<ul>
+<li>In tornado climatology, papers like <strong>“The increasing
+efficiency of tornado days in the United States” (Elsner et al., 2015,
+Clim. Dyn., DOI: 10.1007/s00382-015-2561-8)</strong> and <strong>“A
+spatial point process model for violent tornado occurrence in the US
+Great Plains” (Elsner et al., 2015, Math. Geosci., DOI:
+10.1007/s11004-013-9497-4)</strong> helped quantify shifting risks and
+revealed how tornado intensity interacts with land use and population
+exposure.</li>
+</ul>
+</div>
+</div>
+<div id="mentorship-and-human-capital-development"
+class="section level2">
+<h2>Mentorship and human capital development</h2>
+<p>An equally meaningful part of my career is the mentoring of over
+<strong>16 PhD students and 20 MS students</strong> at FSU. Their work
+spans improving flood forecasts, building hurricane damage models, to
+dissecting tornado climatology. For example:</p>
+<ul>
+<li><p><strong>Nam-Young Kang (2014)</strong> advanced global warming
+links to western Pacific cyclones.</p></li>
+<li><p><strong>Sarah Strazzo (2015)</strong> investigated climate model
+fidelity in reproducing cyclone-SST relationships.</p></li>
+<li><p><strong>Tyler Fricker (2019)</strong> focused on tornado
+casualties and landscape drivers.</p></li>
+</ul>
+</div>
+<div id="research-funding-and-institutional-impact"
+class="section level2">
+<h2>Research funding and institutional impact</h2>
+<p>Over my career, I secured approximately <strong>$1.9 million in
+competitive research funding</strong>, including grants from the
+<strong>National Science Foundation, NOAA, and the Risk Prediction
+Initiative</strong>. These supported interdisciplinary collaborations
+and student-led field campaigns, enriching FSU’s profile in climate risk
+sciences.</p>
+</div>
+<div id="honors-and-recognition" class="section level2">
+<h2>Honors and recognition</h2>
+<p>This sustained record led to recognitions such as the <strong>Gilbert
+F. White Distinguished Lecture (2013, AGU)</strong>, FSU’s
+<strong>University Graduate Mentor Award (2019)</strong>, and
+culminating with the <strong>Late Career Research Award (2022, FSU
+College of Social Sciences and Public Policy)</strong>.</p>
+</div>
+<div id="continuing-influence" class="section level2">
+<h2>Continuing influence</h2>
+<p>As Professor Emeritus, I continue to collaborate on papers examining
+health outcomes related to hurricane threats, advise former students,
+and contribute to public understanding of climate hazards through talks
+and interviews.<a href="#fn1" class="footnote-ref"
+id="fnref1"><sup>1</sup></a></p>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>This document benefited from drafting support by
+OpenAI’s ChatGPT, which helped summarize, organize, and format the
+material.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+<hr>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6248530-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

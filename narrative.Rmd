@@ -1,0 +1,58 @@
+
+My professional journey began at the University of Wisconsin-Milwaukee, where I completed a BSc, MSc, and PhD in Meteorology and Geosciences (1977–1988), followed by a postdoctoral fellowship (1988–1990). It was during this period that my foundational interests in atmospheric dynamics and nonlinear systems took root. This early work laid the groundwork for later explorations into chaos theory and complex geophysical systems.
+
+## Building a scholarly portfolio at Florida State University
+
+I joined Florida State University (FSU) as an Assistant Professor in 1990, initially in the Department of Meteorology. Over the next three decades, my career progressed through Associate Professor in both Meteorology and Geography, to full Professor, and ultimately to holding the Earl B. and Sophia H. Shaw Endowed Chair in Geography (2008–2023). I also served as Chair of the Department of Geography (2015–2021) and a Faculty Associate at the Geophysical Fluid Dynamics Institute (2012–2023). In 2024, I was honored with the title of Professor Emeritus.
+
+These roles provided a platform to build a vibrant research program that bridges statistical climatology, tropical cyclone science, tornado risk, and the mathematics of complex systems.
+
+## Shaping the field: key publications and intellectual contributions
+
+My publication record maps this evolution vividly.
+
+### Tropical cyclone intensity and climate change
+
+-   **"The increasing intensity of the strongest tropical cyclones" (Elsner et al., 2008, Nature, DOI: 10.1038/nature07234)**, with 1458 citations, showed that the strongest hurricanes are intensifying globally. This paper became a cornerstone in discussions of climate change impacts on extreme weather.
+-   **"Trade-off between intensity and frequency of global tropical cyclones" (Kang & Elsner, 2015, Nat. Clim. Change, DOI: 10.1038/nclimate2646)** explored how warming climates might redistribute cyclone characteristics.
+
+### Statistical models and prediction
+
+-  My book **"Hurricanes of the North Atlantic: Climate and Society" (Elsner & Kara, 1999, Oxford University Press)** connected atmospheric science with societal impacts.
+
+-   **"Prediction models for annual US hurricane counts" (Elsner & Jagger, 2006, J. Climate, DOI: 10.1175/JCLI3822.1)** and related works pioneered Bayesian and Poisson-based approaches for seasonal forecasting.
+
+### Nonlinear dynamics, chaos, and complex systems in atmospheric science
+
+- Early work on **attractors and dimension estimation** with A.A. Tsonis, such as **"Nonlinear prediction as a way of distinguishing chaos from random fractal sequences" (1992, Nature, DOI: 10.1038/358217a0)**, was influential in applying chaos theory to weather data.
+
+- Later, **"Singular spectrum analysis: a new tool in time series analysis" (Elsner & Tsonis, 1996/2013, Springer, DOI: 10.1007/978-1-4612-3974-1)** equipped climate researchers with a framework to extract signals from noisy geophysical series.
+
+- My work on **network analysis**, notably **Emily Fogarty’s dissertation on hurricane networks (2009)**, further extended nonlinear system insights into spatial interaction structures.
+
+### Tornado risk, damage, and societal exposure
+
+- In tornado climatology, papers like **"The increasing efficiency of tornado days in the United States" (Elsner et al., 2015, Clim. Dyn., DOI: 10.1007/s00382-015-2561-8)** and **"A spatial point process model for violent tornado occurrence in the US Great Plains" (Elsner et al., 2015, Math. Geosci., DOI: 10.1007/s11004-013-9497-4)** helped quantify shifting risks and revealed how tornado intensity interacts with land use and population exposure.
+
+## Mentorship and human capital development
+
+An equally meaningful part of my career is the mentoring of over **16 PhD students and 20 MS students** at FSU. Their work spans improving flood forecasts, building hurricane damage models, to dissecting tornado climatology. For example:
+
+-  **Nam-Young Kang (2014)** advanced global warming links to western Pacific cyclones.
+
+-  **Sarah Strazzo (2015)** investigated climate model fidelity in reproducing cyclone-SST relationships.
+
+-  **Tyler Fricker (2019)** focused on tornado casualties and landscape drivers.
+
+
+## Research funding and institutional impact
+
+Over my career, I secured approximately **\$1.9 million in competitive research funding**, including grants from the **National Science Foundation, NOAA, and the Risk Prediction Initiative**. These supported interdisciplinary collaborations and student-led field campaigns, enriching FSU’s profile in climate risk sciences.
+
+## Honors and recognition
+
+This sustained record led to recognitions such as the **Gilbert F. White Distinguished Lecture (2013, AGU)**, FSU’s **University Graduate Mentor Award (2019)**, and culminating with the **Late Career Research Award (2022, FSU College of Social Sciences and Public Policy)**.
+
+## Continuing influence
+
+As Professor Emeritus, I continue to collaborate on papers examining health outcomes related to hurricane threats, advise former students, and contribute to public understanding of climate hazards through talks and interviews.^[This document benefited from drafting support by OpenAI’s ChatGPT, which helped summarize, organize, and format the material.]
