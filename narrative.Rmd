@@ -13,30 +13,32 @@ My publication record maps this evolution vividly.
 
 ### Tropical cyclone intensity and climate change
 
--   **"The increasing intensity of the strongest tropical cyclones" (Elsner et al., 2008, Nature, DOI: 10.1038/nature07234)**, with 1458 citations, showed that the strongest hurricanes are intensifying globally. This paper became a cornerstone in discussions of climate change impacts on extreme weather.
--   **"Trade-off between intensity and frequency of global tropical cyclones" (Kang & Elsner, 2015, Nat. Clim. Change, DOI: 10.1038/nclimate2646)** explored how warming climates might redistribute cyclone characteristics.
+-   **"The increasing intensity of the strongest tropical cyclones" (Elsner et al., 2008)**, with 1458 citations, showed that the strongest hurricanes are intensifying globally. This paper became a cornerstone in discussions of climate change impacts on extreme weather.
+-   **"Trade-off between intensity and frequency of global tropical cyclones" (Kang & Elsner, 2015)** explored how warming climates might redistribute cyclone characteristics.
 
 ### Statistical models and prediction
 
--  My book **"Hurricanes of the North Atlantic: Climate and Society" (Elsner & Kara, 1999, Oxford University Press)** connected atmospheric science with societal impacts.
+-  My book **"Hurricanes of the North Atlantic: Climate and Society" (Elsner & Kara, 1999)** connected atmospheric science with societal impacts.
 
--   **"Prediction models for annual US hurricane counts" (Elsner & Jagger, 2006, J. Climate, DOI: 10.1175/JCLI3822.1)** and related works pioneered Bayesian and Poisson-based approaches for seasonal forecasting.
+-   **"Prediction models for annual US hurricane counts" (Elsner & Jagger, 2006)** and related works pioneered Bayesian and Poisson-based approaches for seasonal forecasting.
 
 ### Nonlinear dynamics, chaos, and complex systems in atmospheric science
 
-- Early work on **attractors and dimension estimation** with A.A. Tsonis, such as **"Nonlinear prediction as a way of distinguishing chaos from random fractal sequences" (1992, Nature, DOI: 10.1038/358217a0)**, was influential in applying chaos theory to weather data.
+- Early work on **attractors and dimension estimation** with A.A. Tsonis, such as **"Nonlinear prediction as a way of distinguishing chaos from random fractal sequences" (1992)**, was influential in applying chaos theory to weather data.
 
-- Later, **"Singular spectrum analysis: a new tool in time series analysis" (Elsner & Tsonis, 1996/2013, Springer, DOI: 10.1007/978-1-4612-3974-1)** equipped climate researchers with a framework to extract signals from noisy geophysical series.
+- Later, **"Singular spectrum analysis: a new tool in time series analysis" (Elsner & Tsonis, 1996/2013)** equipped climate researchers with a framework to extract signals from noisy geophysical series.
 
 - My work on **network analysis**, notably **Emily Fogarty’s dissertation on hurricane networks (2009)**, further extended nonlinear system insights into spatial interaction structures.
 
 ### Tornado risk, damage, and societal exposure
 
-- In tornado climatology, papers like **"The increasing efficiency of tornado days in the United States" (Elsner et al., 2015, Clim. Dyn., DOI: 10.1007/s00382-015-2561-8)** and **"A spatial point process model for violent tornado occurrence in the US Great Plains" (Elsner et al., 2015, Math. Geosci., DOI: 10.1007/s11004-013-9497-4)** helped quantify shifting risks and revealed how tornado intensity interacts with land use and population exposure.
+- In tornado climatology, papers like **"The increasing efficiency of tornado days in the United States" (Elsner et al., 2015)** and **"A spatial point process model for violent tornado occurrence in the US Great Plains" (Elsner et al., 2015)** helped quantify shifting risks and revealed how tornado intensity interacts with land use and population exposure.
 
 ## Mentorship and human capital development
 
 An equally meaningful part of my career is the mentoring of over **16 PhD students and 20 MS students** at FSU. Their work spans improving flood forecasts, building hurricane damage models, to dissecting tornado climatology. For example:
+
+-  **Kelsey Scheitlin (2010)** developed a spatial hurricane climatology.
 
 -  **Nam-Young Kang (2014)** advanced global warming links to western Pacific cyclones.
 

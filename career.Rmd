@@ -5,108 +5,36 @@ Over the past three decades, my research has centered on understanding the evolv
 
 ## The intensification of tropical cyclones in a warming world
 
-One of my most cited works, *The increasing intensity of the strongest tropical cyclones* (Elsner, Kossin, & Jagger, 2008), offered compelling statistical evidence that the most intense hurricanes globally are becoming even stronger. By applying quantile regression to best-track datasets, we demonstrated that the upper quantiles of maximum wind speed distributions are rising more rapidly than median values, directly linking sea surface warming to the intensification of the strongest storms. This paradigm-shifting finding, published in *Nature*, continues to underpin assessments by the IPCC and national climate reports.
-
-[DOI: 10.1038/nature07234](https://doi.org/10.1038/nature07234)
-
-This work was complemented by further studies that explored the trade-off between frequency and intensity in global cyclones, revealing that while the total number of storms may fluctuate or decline slightly, the proportion of high-intensity systems is increasing (Kang & Elsner, 2015).
-
-[DOI: 10.1038/nclimate2640](https://doi.org/10.1038/nclimate2640)
-
-In recent extensions, I have examined the continuing rise in maximum intensities, validating and extending the 2008 findings with updated datasets and statistical refinements.
-
-[DOI: 10.1175/BAMS-D-19-0044.1](https://doi.org/10.1175/BAMS-D-19-0044.1)
+One of my most cited works, *The increasing intensity of the strongest tropical cyclones* (Elsner, Kossin, & Jagger, 2008), offered compelling statistical evidence that the most intense hurricanes globally are becoming even stronger. By applying quantile regression to best-track datasets, we demonstrated that the upper quantiles of maximum wind speed distributions are rising more rapidly than median values, directly linking sea surface warming to the intensification of the strongest storms. This paradigm-shifting finding, published in *Nature*, continues to underpin assessments by the IPCC and national climate reports. This work was complemented by further studies that explored the trade-off between frequency and intensity in global cyclones, revealing that while the total number of storms may fluctuate or decline slightly, the proportion of high-intensity systems is increasing (Kang & Elsner, 2015). In recent extensions, I have examined the continuing rise in maximum intensities, validating and extending the 2008 findings with updated datasets and statistical refinements.
 
 ---
 
 ## Statistical climatology and prediction of hurricanes
 
-My monograph *Hurricanes of the North Atlantic: Climate and Society* (Elsner & Kara, 1999) laid a foundation for integrating climate variability with hurricane impacts, bridging statistical climatology with societal concerns.
-
-Oxford University Press, 1999.
-
-Building on this, I advanced probabilistic models for hurricane risk. In *Climatology models for extreme hurricane winds near the United States* (Jagger & Elsner, 2006), we used extreme value theory to estimate return levels of hurricane winds, critical for coastal engineering and insurance.
-
-[DOI: 10.1175/JCLI3917.1](https://doi.org/10.1175/JCLI3917.1)
-
-Similarly, in *Prediction models for annual U.S. hurricane counts* (Elsner & Jagger, 2006), we developed statistical frameworks incorporating ENSO and NAO indices to improve seasonal forecasting skill.
-
-[DOI: 10.1175/JCLI3823.1](https://doi.org/10.1175/JCLI3823.1)
-
-A hierarchical Bayesian approach later allowed more nuanced seasonal hurricane outlooks, capturing uncertainty explicitly (Elsner & Jagger, 2004).
-
-[DOI: 10.1175/1520-0442(2004)017<2813:HBAOSH>2.0.CO;2](https://doi.org/10.1175/1520-0442(2004)017<2813:HBAOSH>2.0.CO;2)
+My monograph *Hurricanes of the North Atlantic: Climate and Society* (Elsner & Kara, 1999) laid a foundation for integrating climate variability with hurricane impacts, bridging statistical climatology with societal concerns. Building on this, I advanced probabilistic models for hurricane risk. In *Climatology models for extreme hurricane winds near the United States* (Jagger & Elsner, 2006), we used extreme value theory to estimate return levels of hurricane winds, critical for coastal engineering and insurance. Similarly, in *Prediction models for annual U.S. hurricane counts* (Elsner & Jagger, 2006), we developed statistical frameworks incorporating ENSO and NAO indices to improve seasonal forecasting skill.A hierarchical Bayesian approach later allowed more nuanced seasonal hurricane outlooks, capturing uncertainty explicitly (Elsner & Jagger, 2004).
 
 ---
 
 ## Hurricanes, climate change, and long-term variability
 
-An important thread in my research has been detecting climate signals in hurricane data. In *Changes in the rates of North Atlantic major hurricane activity during the 20th century* (Elsner, Jagger, & Niu, 2000), we identified a significant uptick in major hurricane frequencies after the 1940s, linked to multidecadal ocean variability.
-
-[DOI: 10.1029/2000GL011631](https://doi.org/10.1029/2000GL011631)
-
-I also examined how El Niño events modulate U.S. landfall probabilities, initially revisiting the topic in a seminal *Bulletin of the American Meteorological Society* paper that became a standard reference (Bove et al., 1998).
-
-[DOI: 10.1175/1520-0477(1998)079<2477:TEONUL>2.0.CO;2](https://doi.org/10.1175/1520-0477(1998)079<2477:TEONUL>2.0.CO;2)
-
-Later, we documented secular shifts in the ENSO-hurricane relationship, highlighting how anthropogenic warming may be altering traditional teleconnections (Elsner et al., 2001).
-
-[DOI: 10.1029/2001GL013669](https://doi.org/10.1029/2001GL013669)
+An important thread in my research has been detecting climate signals in hurricane data. In *Changes in the rates of North Atlantic major hurricane activity during the 20th century* (Elsner, Jagger, & Niu, 2000), we identified a significant uptick in major hurricane frequencies after the 1940s, linked to multidecadal ocean variability. I also examined how El Niño events modulate U.S. landfall probabilities, initially revisiting the topic in a seminal *Bulletin of the American Meteorological Society* paper that became a standard reference (Bove et al., 1998). Later, we documented secular shifts in the ENSO-hurricane relationship, highlighting how anthropogenic warming may be altering traditional teleconnections (Elsner et al., 2001).
 
 ---
 
 ## Nonlinear dynamics, chaos, and complex systems in atmospheric science
 
-A parallel and influential thread of my work involves exploring atmospheric variability through the lens of nonlinear systems and chaos. Together with Anastasios Tsonis, we introduced singular spectrum analysis (SSA) to climate science, systematically decomposing time series to identify low-frequency climate modes and separate noise from signal. Our book *Singular Spectrum Analysis: A New Tool in Time Series Analysis* (Elsner & Tsonis, 1996, expanded 2013) became a cornerstone text for climate statisticians.
-
-[DOI: 10.1007/978-1-4612-2354-0](https://doi.org/10.1007/978-1-4612-2354-0)
-
-In *Nonlinear prediction, chaos, and noise* (Elsner & Tsonis, 1992) and *Nonlinear prediction as a way of distinguishing chaos from random fractal sequences* (Tsonis & Elsner, 1992), we developed frameworks to diagnose chaotic dynamics in meteorological records, clarifying the limits of predictability.
-
-[DOI: 10.1175/1520-0477(1992)073<0049:NPCAN>2.0.CO;2](https://doi.org/10.1175/1520-0477(1992)073<0049:NPCAN>2.0.CO;2)
-
-### Network analysis of climate extremes
-
-Building on nonlinear perspectives, I pioneered network approaches to analyze hurricane time series. In *Visibility network of United States hurricanes* (Elsner, Jagger, & Fogarty, 2009), we converted temporal sequences into complex networks, uncovering structural properties that revealed novel insights into clustering and persistence.
-
-[DOI: 10.1029/2009GL039129](https://doi.org/10.1029/2009GL039129)
-
-These methods have since been adapted to tornado time series and even to multi-decadal reconstructions of paleostorm activity.
+A parallel and influential thread of my work involves exploring atmospheric variability through the lens of nonlinear systems and chaos. Together with Anastasios Tsonis, we introduced singular spectrum analysis (SSA) to climate science, systematically decomposing time series to identify low-frequency climate modes and separate noise from signal. Our book *Singular Spectrum Analysis: A New Tool in Time Series Analysis* (Elsner & Tsonis, 1996, expanded 2013) became a cornerstone text for climate statisticians. In *Nonlinear prediction, chaos, and noise* (Elsner & Tsonis, 1992) and *Nonlinear prediction as a way of distinguishing chaos from random fractal sequences* (Tsonis & Elsner, 1992), we developed frameworks to diagnose chaotic dynamics in meteorological records, clarifying the limits of predictability. Building on nonlinear perspectives, I pioneered network approaches to analyze hurricane time series. In *Visibility network of United States hurricanes* (Elsner, Jagger, & Fogarty, 2009), we converted temporal sequences into complex networks, uncovering structural properties that revealed novel insights into clustering and persistence. These methods have since been adapted to tornado time series and even to multi-decadal reconstructions of paleostorm activity.
 
 ---
 
 ## Tornado climatology and societal impacts
 
-Turning to severe convective storms, my research documented important spatial and temporal changes in U.S. tornado activity. In *The increasing efficiency of tornado days in the United States* (Elsner, Elsner, & Jagger, 2015), we showed that while the number of days with tornadoes remains roughly constant, the number of tornadoes per day is increasing, with implications for outbreak dynamics.
-
-[DOI: 10.1007/s00382-015-2537-8](https://doi.org/10.1007/s00382-015-2537-8)
-
-Our work on tornado casualties—*The relationship between elevation roughness and tornado activity* (Elsner et al., 2016)—highlighted how terrain modulates tornado occurrence, informing local risk models.
-
-[DOI: 10.1175/JAMC-D-15-0168.1](https://doi.org/10.1175/JAMC-D-15-0168.1)
-
-In *A spatial point process model for violent tornado occurrence in the U.S. Great Plains* (Elsner et al., 2015), we integrated spatial statistics to map hot spots of tornado risk, blending meteorological and geographic perspectives.
-
-[DOI: 10.1007/s11004-014-9530-z](https://doi.org/10.1007/s11004-014-9530-z)
+Turning to severe convective storms, my research documented important spatial and temporal changes in U.S. tornado activity. In *The increasing efficiency of tornado days in the United States* (Elsner, Elsner, & Jagger, 2015), we showed that while the number of days with tornadoes remains roughly constant, the number of tornadoes per day is increasing, with implications for outbreak dynamics. Our work on tornado casualties—*The relationship between elevation roughness and tornado activity* (Elsner et al., 2016)—highlighted how terrain modulates tornado occurrence, informing local risk models. In *A spatial point process model for violent tornado occurrence in the U.S. Great Plains* (Elsner et al., 2015), we integrated spatial statistics to map hot spots of tornado risk, blending meteorological and geographic perspectives.
 
 ---
 
 ## Bridging fundamental understanding and real-world decision making
 
-Throughout my career, I have aimed to translate scientific advances into frameworks that support planning and resilience. Our *Bayesian analysis of U.S. hurricane climate* (Elsner & Bossak, 2001) explicitly addressed forecast uncertainty, paving the way for probabilistic hazard communication.
-
-[DOI: 10.1175/1520-0442(2001)014<4341:BAOUSC>2.0.CO;2](https://doi.org/10.1175/1520-0442(2001)014<4341:BAOUSC>2.0.CO;2)
-
-Similarly, research linking hurricane wind extremes to economic losses (Murnane & Elsner, 2012) provided quantitative bases for insurance and infrastructure policies.
-
-[DOI: 10.1029/2012GL052646](https://doi.org/10.1029/2012GL052646)
-
-More recently, I’ve focused on coupling wind and surge risks to support compound hazard models critical for coastal cities like Galveston and Miami.
-
----
-
-## Conclusion: advancing climate risk science in a warming world
+Throughout my career, I have aimed to translate scientific advances into frameworks that support planning and resilience. Our *Bayesian analysis of U.S. hurricane climate* (Elsner & Bossak, 2001) explicitly addressed forecast uncertainty, paving the way for probabilistic hazard communication. Similarly, research linking hurricane wind extremes to economic losses (Murnane & Elsner, 2012) provided quantitative bases for insurance and infrastructure policies. More recently, I’ve focused on coupling wind and surge risks to support compound hazard models critical for coastal cities like Galveston and Miami.
 
 Taken together, this corpus of work has helped shape how scientists, planners, and policymakers understand the evolving risks from hurricanes and tornadoes under climate change. From identifying intensification trends in the most powerful tropical cyclones, to pioneering new methods for extracting climate signals and representing risks probabilistically, my contributions underscore the importance of coupling rigorous data analysis with societal relevance. As climate hazards continue to evolve, these approaches will remain essential for building resilient communities.^[This document benefited from drafting support by OpenAI's ChatGPT, which helped summarize, organize, and format the material.]
-
-
