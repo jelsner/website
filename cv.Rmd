@@ -18,102 +18,107 @@ library(RefManageR)
 ```
 
 <ul class="CV">
-<li><i class="fa fa-home" aria-hidden="true"></i>  `r paste(" ", params$address)`</li>
-<li><i class="fa fa-envelope-o" aria-hidden="true"></i>  `r paste(" ", params$email)`</li>
+
+<li><i class="fa fa-home" aria-hidden="true"></i> `r paste(" ", params$address)`</li>
+
+<li><i class="fa fa-envelope-o" aria-hidden="true"></i> `r paste(" ", params$email)`</li>
+
 <li><i class="fa fa-clock-o" aria-hidden="true"></i> Last Updated: `r paste(" ", format(Sys.Date(), "%B %d, %Y"))`</li>
+
 </ul>
 
-*************
+------------------------------------------------------------------------
 
 # Education
 
-* 1988 - 1990: PostDoc - University of Wisconsin-Milwaukee
-* 1984 - 1988: PhD in Geosciences - University of Wisconsin-Milwaukee
-* 1981 - 1984: MSc in Meteorology - University of Wisconsin-Milwaukee
-* 1977 - 1981: BSc in Meteorology - University of Wisconsin-Milwaukee
+-   1988 - 1990: PostDoc - University of Wisconsin-Milwaukee
+-   1984 - 1988: PhD in Geosciences - University of Wisconsin-Milwaukee
+-   1981 - 1984: MSc in Meteorology - University of Wisconsin-Milwaukee
+-   1977 - 1981: BSc in Meteorology - University of Wisconsin-Milwaukee
 
-*************
+------------------------------------------------------------------------
 
 # Professional Experience
-* 2024 - present
-    + Professor Emeritus, Florida State University
-* 2008 - 2023
-    + Earl B. and Sophia H. Shaw Professor, Department of Geography, Florida State University
-* 2012 - 2023
-    + Faculty Associate, Geophysical Fluid Dynamics Institute, Florida State University
-* 2015 - 2021
-    + Chair, Department of Geography, Florida State University
-* 2001 - 2016
-    + President of *Climatek Inc.*
-* 2001 - 2008
-    + Professor, Department of Geography, Florida State University
-* 1998 - 2001
-    + Associate Professor, Department of Geography, Florida State University
-* 1995 - 1998
-    + Associate Professor, Department of Meteorology, Florida State University
-* 1990 - 1995
-    + Assistant Professor, Department of Meteorology, Florida State University
 
-*************
+-   2024 - present
+    -   Professor Emeritus, Florida State University
+-   2008 - 2023
+    -   Earl B. and Sophia H. Shaw Professor, Department of Geography, Florida State University
+-   2012 - 2023
+    -   Faculty Associate, Geophysical Fluid Dynamics Institute, Florida State University
+-   2015 - 2021
+    -   Chair, Department of Geography, Florida State University
+-   2001 - 2016
+    -   President of *Climatek Inc.*
+-   2001 - 2008
+    -   Professor, Department of Geography, Florida State University
+-   1998 - 2001
+    -   Associate Professor, Department of Geography, Florida State University
+-   1995 - 1998
+    -   Associate Professor, Department of Meteorology, Florida State University
+-   1990 - 1995
+    -   Assistant Professor, Department of Meteorology, Florida State University
+
+------------------------------------------------------------------------
 
 # PhD Students Graduated
 
-- Matthew M. Carter, _A quantitative precipitation forecast experiment for Puerto Rico_, 1999
-- Brian H. Bossak, _Early nineteenth-century United States hurricanes: A GIS tool and climate analysis_, 2003
-- Jeffrey James Dickey, _Improved flood prediction from basin elevation distribution_, 2006
-- Todd H. Albert, _Assessing glacier mass balances from small tropical glaciers to the large ice sheet of Greenland_, 2007
-- Emily A. Fogarty, _Network analysis of hurricanes affecting the United States_, 2009
-- Kelsey Nicole Scheitlin, _Construction and application of a spatial hurricane climatology_, 2010
-- Heather A. Gamper (co), _Effects of scale insects on forest dynamics in tropical montane oak forests of Veracruz, Mexico_, 2012
-- Jill Trepanier, _Quantifying extreme hurricane risk in the North Atlantic and Gulf of Mexico_, 2012
-- Robert Edward Hodges, _Understanding and predicting the regional sun-hurricane count relationship_, 2013
-- Nam-Young Kang, _Global warming and tropical cyclone climate in the western North Pacific_, 2014
-- Sarah Strazzo, _Assessing the ability of climate models to simulate the observed sensitivity of tropical cyclone intensity to sea surface temperature_, 2015
-- Erik Fraza, _Spatial analyses of climatological effects on hurricane intensification rates_, 2016
-- Peter Wood (co)
-- Holly M. Widen, _New methods in tornado risk and vulnerability assessments_, 2016
-- John M. Humphreys, _Traits, Species, and Communities: Integrative Bayesian Approaches to Ecological Biogeography across Geographic, Environmental, Phylogenetic, and Morphological Space_, 2018
-- Tyler Fricker, _A Geography of Tornado Casualties in the United States_, 2019
-- Gregory Burris (co), _Between proxy and instrument: Reconstructing past weather using qualitative human observations in the absence of instrumental and prox records: A case study from Shirley Plantation, Virginia_, 2021
-- Zoe Schroder, _Tornado Outbreak Climatology in the United States (1995–2020): Definitions, Descriptions, and Statistical Analyses_, 2021
-- Efraim Roxas (co), _Critical Vulnerability and Community Care Towards a Resilience from Below_, 2023
+-   Matthew M. Carter, *A quantitative precipitation forecast experiment for Puerto Rico*, 1999
+-   Brian H. Bossak, *Early nineteenth-century United States hurricanes: A GIS tool and climate analysis*, 2003
+-   Jeffrey James Dickey, *Improved flood prediction from basin elevation distribution*, 2006
+-   Todd H. Albert, *Assessing glacier mass balances from small tropical glaciers to the large ice sheet of Greenland*, 2007
+-   Emily A. Fogarty, *Network analysis of hurricanes affecting the United States*, 2009
+-   Kelsey Nicole Scheitlin, *Construction and application of a spatial hurricane climatology*, 2010
+-   Heather A. Gamper (co), *Effects of scale insects on forest dynamics in tropical montane oak forests of Veracruz, Mexico*, 2012
+-   Jill Trepanier, *Quantifying extreme hurricane risk in the North Atlantic and Gulf of Mexico*, 2012
+-   Robert Edward Hodges, *Understanding and predicting the regional sun-hurricane count relationship*, 2013
+-   Nam-Young Kang, *Global warming and tropical cyclone climate in the western North Pacific*, 2014
+-   Sarah Strazzo, *Assessing the ability of climate models to simulate the observed sensitivity of tropical cyclone intensity to sea surface temperature*, 2015
+-   Erik Fraza, *Spatial analyses of climatological effects on hurricane intensification rates*, 2016
+-   Peter Wood (co)
+-   Holly M. Widen, *New methods in tornado risk and vulnerability assessments*, 2016
+-   John M. Humphreys, *Traits, Species, and Communities: Integrative Bayesian Approaches to Ecological Biogeography across Geographic, Environmental, Phylogenetic, and Morphological Space*, 2018
+-   Tyler Fricker, *A Geography of Tornado Casualties in the United States*, 2019
+-   Gregory Burris (co), *Between proxy and instrument: Reconstructing past weather using qualitative human observations in the absence of instrumental and prox records: A case study from Shirley Plantation, Virginia*, 2021
+-   Zoe Schroder, *Tornado Outbreak Climatology in the United States (1995–2020): Definitions, Descriptions, and Statistical Analyses*, 2021
+-   Efraim Roxas (co), *Critical Vulnerability and Community Care Towards a Resilience from Below*, 2023
 
 # MS Students Graduated
 
-- Vincint Robert Tino, _A validation of the industrial source complex (ISC2) dispersion model in the Kuwaiti oil fire situation_, 1992 
-- Jason C. Hess, _Improving seasonal predictions of hurricane activity for the Atlantic basin_, 1994
-- Matthew M. Carter, _Convective rainfall regions in Puerto Rico_, 1995
-- Todd B. Kimberlain, _Baroclinically-initiated hurricanes of the North Atlantic basin_, 1996
-- Kwan Kong, _Landfall and post-landfall structure of Hurricane Danny and the possibility of retrieving vertical velocity profiles from rawinsonde soundings_, 1999
-- David Whitehead, _An evaluation of coastal county hurricane vulnerability_, 1999
-- Wei tan Pan (co), 
-- Bethany Kocher, _Tropical cyclones and the North Atlantic oscillation_, 2000
-- Marc D. Cooper, _The association of human activities with land degradation in the Republic of Botswana_, 2000
-- Ethan J. Gibney, _An assessment of potential for economic loss to residential property in United States coastal counites [i.e., counties] from tropical cyclones using a geographical information system_, 2002
-- Emily A. Fogarty, _Variations in typhoon landfalls over China_, 2004
-- Jill Malmstadt, _Pre-landfall intensity as predictor of economic loss from Florida hurricanes, 1900-2007_, 2009
-- Robert Edward Hodges, _Evidence for a solar influence on U.S.-affecting hurricanes_, 2009
-- Ona Marie Strikas, _Modeling the spatial differentiation in cloud-to-ground lightning: A case study in Atlanta, Georgia, USA_, 2023
-- Laura E. Michaels, _Spatial and temporal characteristics of the population bias in U.S. tornado reports_, 2013
-- Tyler Fricker, _Estimating kinetic energy of U.S. tornadoes_, 2015
-- Emily Ryan, _Florida's Tornado Climatology: Occurrence Rates, Casualties, and Property Losses_, 2018
-- Zachery Taylor Law, _Wildfires in the Apalachicola National Forest, USA from 1992–2018: Relationships to Soil Dryness and Lightning_, 2022
+-   Vincint Robert Tino, *A validation of the industrial source complex (ISC2) dispersion model in the Kuwaiti oil fire situation*, 1992
+-   Jason C. Hess, *Improving seasonal predictions of hurricane activity for the Atlantic basin*, 1994
+-   Matthew M. Carter, *Convective rainfall regions in Puerto Rico*, 1995
+-   Todd B. Kimberlain, *Baroclinically-initiated hurricanes of the North Atlantic basin*, 1996
+-   Kwan Kong, *Landfall and post-landfall structure of Hurricane Danny and the possibility of retrieving vertical velocity profiles from rawinsonde soundings*, 1999
+-   David Whitehead, *An evaluation of coastal county hurricane vulnerability*, 1999
+-   Wei tan Pan (co),
+-   Bethany Kocher, *Tropical cyclones and the North Atlantic oscillation*, 2000
+-   Marc D. Cooper, *The association of human activities with land degradation in the Republic of Botswana*, 2000
+-   Ethan J. Gibney, *An assessment of potential for economic loss to residential property in United States coastal counites [i.e., counties] from tropical cyclones using a geographical information system*, 2002
+-   Emily A. Fogarty, *Variations in typhoon landfalls over China*, 2004
+-   Jill Malmstadt, *Pre-landfall intensity as predictor of economic loss from Florida hurricanes, 1900-2007*, 2009
+-   Robert Edward Hodges, *Evidence for a solar influence on U.S.-affecting hurricanes*, 2009
+-   Ona Marie Strikas, *Modeling the spatial differentiation in cloud-to-ground lightning: A case study in Atlanta, Georgia, USA*, 2023
+-   Laura E. Michaels, *Spatial and temporal characteristics of the population bias in U.S. tornado reports*, 2013
+-   Tyler Fricker, *Estimating kinetic energy of U.S. tornadoes*, 2015
+-   Emily Ryan, *Florida's Tornado Climatology: Occurrence Rates, Casualties, and Property Losses*, 2018
+-   Zachery Taylor Law, *Wildfires in the Apalachicola National Forest, USA from 1992–2018: Relationships to Soil Dryness and Lightning*, 2022
 
 # Grant Totals
 
-* Risk Prediction Initiative $355,475
-* National Science Foundation $1,306,348 
-* National Oceanic and Atmospheric Administration $96,000
-* Florida State University $122,500
+-   Risk Prediction Initiative \$355,475
+-   National Science Foundation \$1,306,348
+-   National Oceanic and Atmospheric Administration \$96,000
+-   Florida State University \$122,500
 
 # Awards
 
-* Late Career Research Award College of Social Sciences and Public Policy, 2022, FSU.
-* Earl & Sophia Shaw Endowed Chair in Geography, FSU.
-* University Graduate Mentor Award, 2019, FSU.
-* Gilbert F. White Distinguished Lecture Award, 2013, American Geophysical Union.
-* Teaching Incentive Program Award, 1996, FSU.
-* Outstanding Student Teacher Award, 1987, UWM.
+-   Late Career Research Award College of Social Sciences and Public Policy, 2022, FSU.
+-   Earl & Sophia Shaw Endowed Chair in Geography, FSU.
+-   University Graduate Mentor Award, 2019, FSU.
+-   Gilbert F. White Distinguished Lecture Award, 2013, American Geophysical Union.
+-   Teaching Incentive Program Award, 1996, FSU.
+-   Outstanding Student Teacher Award, 1987, UWM.
 
 # Academic Books
 
