@@ -2,21 +2,24 @@ name: "James_Elsner"
 navbar:
   title: "James Brian Elsner"
   left:
-    - text: "Narrative"
+    - text: "If it spins it wins!"
       icon: fa-file  fa-2x
       href: narrative.html
-    - text: "Summary"
+    - text: "Career summary"
       icon: fa-file  fa-2x
       href: career.html
-    - text: "Publications"
+    - text: "Publication list"
       icon: fa-book  fa-2x
       href: publications.html
     - text: "Vita"
       icon: fa-file  fa-2x
       href: cv.html
-    - text: "GitHub"
+    - text: "Code bank"
       icon: fa-github fa-2x
       href: https://github.com/jelsner
+    - text: "Escape!! Frisbee"
+      icon: fa-youtube fa-2x
+      href: https://youtube.com/@james.elsner
 output:
   html_document:
     css: style.css
